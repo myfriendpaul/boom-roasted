@@ -1,14 +1,10 @@
-import Product from "../models/product"
-
-import React from 'react'
+import Product from "../models/product.js";
 
 export const getProducts = async (req, res) => {
   try {
-    const products = await Products.find()
-    res.json(products)
-  } catch(error) {
-    console.error(error.message)
-    res.status(500).json({ error: error.message })
+    const product = await Product.find();
+    res.json(product);
+  } catch (error) {
+    res.status(500).send(error.message);
   }
-}
-
+};
