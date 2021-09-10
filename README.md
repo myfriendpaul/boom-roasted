@@ -1,3 +1,4 @@
+
 ## Product Overview
 
 ### Product Name
@@ -90,3 +91,5 @@ const Product = new Schema
 | Sept 15 | Styling screens                                              | Incomplete |
 | Sept 16 | Styling screens / 1 MVP feature                              | Incomplete |
 | Sept 17 | Product Launch                                              | Incomplete |
+
+
