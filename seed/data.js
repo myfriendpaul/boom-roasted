@@ -1,8 +1,17 @@
 import db from "../db/connection.js";
 import Product from "../models/product.js";
+import User from "../models/user.js";
+import bcrypt from "bcrypt";
 
 const insertData = async () => {
   await db.dropDatabase();
+
+  const user1 = new User({
+    username: "paul1",
+    email: "paul1@gmail.com",
+    password_digest: await bcrypt.hash("!a$ecureP@ssw0Rd55!", 11),
+  });
+  await user1.save();
 
   const products = [
     {
@@ -12,8 +21,7 @@ const insertData = async () => {
       origin: "Ohio",
 
       imgURL: "https://i.imgur.com/lgljKKl.png",
-
-      },
+    },
     {
       name: "Paul's blend",
       description: "Gives you what you need when you need it",
