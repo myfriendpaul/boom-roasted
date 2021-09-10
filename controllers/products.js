@@ -17,3 +17,13 @@ export const getProduct = async (req, res) => {
     res.status(500).send(error.message);
   }
 };
+
+export const createProduct = async (req, res) => {
+  try {
+    const product = new Product(req.body);
+    await product.save();
+    res.status(201).json(product);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
