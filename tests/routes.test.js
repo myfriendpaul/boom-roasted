@@ -100,6 +100,11 @@ describe("Test the express routes for products", () => {
     // Save the _id value for later use with other tests
     productId = res.body[0]._id;
   });
+  it("should show a specific product", async () => {
+    const res = await request(app).get(`/api/products/${productId}`);
+    expect(res.statusCode).toEqual(200);
+    expect(res.body).toHaveProperty("_id");
+  });
 });
 
 afterAll(async () => {
