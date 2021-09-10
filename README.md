@@ -76,7 +76,7 @@ const Product = new Schema
 - Fully responsive design utilizing Bootstrap CSS framework.
 - Users will be able sign up / sign in and browse current inventory.
 - If the user has a custom coffee blend that is not available or not in inventory, they will be able to add the blend.
-- Deployed to Heroku, Netlify, and MongoDB Atlas
+- Deployed to Heroku, Netlify, and MongoDB Atlas.
 
 ### Schedule
 
