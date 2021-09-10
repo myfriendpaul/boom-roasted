@@ -1,9 +1,11 @@
-import app from "../app.js"
-import db from "./db/connection.js"
+import app from "./app.js";
+import db from "./db/connection.js";
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 db.on("connected", () => {
-  console.log("Connected to MongoDB!")
-  app.listen(PORT, () => console.log(`Express server application is running on ${PORT}`))
-})
+  console.log("Connected to MongoDB!");
+  app.listen(PORT, () =>
+    console.log(`Express server application is running on ${PORT}`)
+  );
+});
