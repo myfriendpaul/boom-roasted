@@ -123,6 +123,12 @@ describe("Test the express routes for products", () => {
     expect(res.statusCode).toEqual(200);
     expect(res.body).toHaveProperty("_id");
   });
+
+  it("should delete a product", async () => {
+    const res = await request(app).del(`/api/products/${productId}`);
+    expect(res.statusCode).toEqual(200);
+    expect(res.text).toEqual("Product deleted");
+  });
 });
 
 afterAll(async () => {
