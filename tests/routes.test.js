@@ -112,6 +112,17 @@ describe("Test the express routes for products", () => {
     expect(res.statusCode).toEqual(201);
     expect(res.body).toHaveProperty("_id");
   });
+  it("should update a product", async () => {
+    const res = await request(app).put(`/api/products/${productId}`).send({
+      name: "Test",
+      description: "Test",
+      price: "Test",
+      origin: "Test",
+      imgURL: "https://i.imgur.com/W0380gz.png",
+    });
+    expect(res.statusCode).toEqual(200);
+    expect(res.body).toHaveProperty("_id");
+  });
 });
 
 afterAll(async () => {

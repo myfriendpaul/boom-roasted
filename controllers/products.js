@@ -27,3 +27,15 @@ export const createProduct = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+export const updateProduct = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const product = await Product.findByIdAndUpdate(id, req.body, {
+      new: true,
+    });
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
