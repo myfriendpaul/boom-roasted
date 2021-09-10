@@ -3,11 +3,7 @@ const Schema = mongoose.Schema;
 
 const User = new Schema(
   {
-    firstname: {
-      type: String,
-      required: true,
-    },
-    lastname: {
+    username: {
       type: String,
       required: true,
     },
