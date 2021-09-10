@@ -88,17 +88,46 @@ beforeAll(async () => {
 
 let productId;
 
-// projects api tests
 describe("Test the express routes for products", () => {
-  // test the GET express route for the '/api/projects' path
   it("should show all projects", async () => {
     const res = await request(app).get(`/api/products`);
-    // test that the status code is 200 - successful
     expect(res.statusCode).toEqual(200);
-    // test that the response object has an _id property
     expect(res.body[0]).toHaveProperty("_id");
-    // Save the _id value for later use with other tests
     productId = res.body[0]._id;
+  });
+  it("should show a specific product", async () => {
+    const res = await request(app).get(`/api/products/${productId}`);
+    expect(res.statusCode).toEqual(200);
+    expect(res.body).toHaveProperty("_id");
+  });
+
+  it("should create a new product", async () => {
+    const res = await request(app).post(`/api/products`).send({
+      name: "Test",
+      description: "Test",
+      price: "Test",
+      origin: "Test",
+      imgURL: "https://i.imgur.com/W0380gz.png",
+    });
+    expect(res.statusCode).toEqual(201);
+    expect(res.body).toHaveProperty("_id");
+  });
+  it("should update a product", async () => {
+    const res = await request(app).put(`/api/products/${productId}`).send({
+      name: "Test",
+      description: "Test",
+      price: "Test",
+      origin: "Test",
+      imgURL: "https://i.imgur.com/W0380gz.png",
+    });
+    expect(res.statusCode).toEqual(200);
+    expect(res.body).toHaveProperty("_id");
+  });
+
+  it("should delete a product", async () => {
+    const res = await request(app).del(`/api/products/${productId}`);
+    expect(res.statusCode).toEqual(200);
+    expect(res.text).toEqual("Product deleted");
   });
 });
 
