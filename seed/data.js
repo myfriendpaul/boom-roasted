@@ -10,8 +10,10 @@ const insertData = async () => {
       description: "A delicate piece of glassware",
       price: "$9.69",
       origin: "Ohio",
+
       imgURL: "https://i.imgur.com/lgljKKl.png",
-    },
+
+      },
     {
       name: "Paul's blend",
       description: "Gives you what you need when you need it",
