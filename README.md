@@ -83,13 +83,13 @@ const Product = new Schema
 | Day      | Deliverable                                                 | Status     |
 | -------- | ----------------------------------------------------------- | ---------- |
 | Sept 9  | Client consultation / Wireframes / Timeframes                | Complete   |
-| Sept 10 | Readme / Back-end development                                | Incomplete |
+| Sept 10 | Readme / Back-end development                                | Complete   |
 | Sept 11 | Prepare back-end for deployment                              | Incomplete |
 | Sept 12 | Code review and deployment                                   | Incomplete |
 | Sept 13 | Front-end development                                        | Incomplete |
 | Sept 14 | Working prototype                                            | Incomplete |
 | Sept 15 | Styling screens                                              | Incomplete |
 | Sept 16 | Styling screens / 1 MVP feature                              | Incomplete |
-| Sept 17 | Product Launch                                              | Incomplete |
+| Sept 17 | Product Launch                                               | Incomplete |
 
 
