@@ -74,7 +74,7 @@ const Product = new Schema
 - Create an API to manage, store, and authenticate user information.  
 - API will also manage product inventory with full CRUD functionality.
 - Fully responsive design utilizing Bootstrap CSS framework.
-- Users will be able sign up / sign in and browse current inventory.
+- Users will be able sign up / sign in and browse current inventory
 - If the user has a custom coffee blend that is not available or not in inventory, they will be able to add the blend.
 - Deployed to Heroku, Netlify, and MongoDB Atlas.
 
