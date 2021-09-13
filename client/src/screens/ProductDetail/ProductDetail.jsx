@@ -1,33 +1,33 @@
-import React, { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import { deleteProduct, getProduct } from '../../services/products'
-import Layout  from '../../components/Layout/Layout'
-import './ProductDetail.css'
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { deleteProduct, getProduct } from "../../services/products";
+import Layout from "../../components/Layout/Layout";
+import "./ProductDetail.css";
 
 const ProductDetail = (props) => {
-  const [product, setProduct] = useState(null)
-  const [isLoaded, setLoaded] = useState(false)
+  const [product, setProduct] = useState(null);
+  const [isLoaded, setLoaded] = useState(false);
 
-  const { id } = useParams()
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const product = await getProduct(id)
-      setProduct(product)
-      setLoaded(true)
-    }
-    fetchProduct()
-  }, [id])
+      const product = await getProduct(id);
+      console.log(product);
+      setProduct(product);
+      setLoaded(true);
+    };
+    fetchProduct();
+  }, [id]);
 
   if (!isLoaded) {
-    return <h1>Loading...</h1>
+    return <h1>Loading</h1>;
   }
-
 
   return (
     <>
       <Layout user={props.user}>
-        <div className='product-detail'>
+        <div className="product-detail">
           <img
             className="product-detail-image"
             src={product.imgURL}
@@ -41,24 +41,25 @@ const ProductDetail = (props) => {
           </div>
         </div>
 
-        <div className='add-cart-div'>
-          <button className='add-cart'>Add to cart</button>
+        <div className="add-cart-div">
+          <button className="add-cart">Add to cart</button>
         </div>
 
-        <div className='delete-button-div'>
+        <div className="delete-button-div">
           <button
             className="delete-button"
-            onClick={() => deleteProduct(product.id)}>
+            onClick={() => deleteProduct(product.id)}
+          >
             Delete
           </button>
         </div>
 
-        <div className='edit-button-div'>
-          <button className='edit-button'>Edit</button>
+        <div className="edit-button-div">
+          <button className="edit-button">Edit</button>
         </div>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default ProductDetail
+export default ProductDetail;
