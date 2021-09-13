@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./screens/Home/Home";
-import ProductList from "./screens/ProductList/ProductList";
 import ProductCreate from "./screens/ProductCreate/ProductCreate";
+import ProductList from "./screens/ProductList/ProductList";
 import ProductEdit from "./screens/ProductEdit/ProductEdit";
 import ProductDetail from "./screens/ProductDetail/ProductDetail";
 import { Route, Switch, Redirect } from "react-router-dom";
