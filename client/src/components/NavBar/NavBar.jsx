@@ -35,7 +35,7 @@ const NavBar = ({ user }) => {
     <div className="Nav">
       <NavLink className="Logo" to="/"></NavLink>
       <NavLink className="logo" to="/">
-        ProductsApp
+        Boom! Roasted
       </NavLink>
       <div className="links">
         {user && <div className="link welcome">Welcome, {user.username}</div>}
