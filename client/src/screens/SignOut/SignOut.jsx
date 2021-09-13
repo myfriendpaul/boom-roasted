@@ -10,7 +10,7 @@ const SignOut = (props) => {
     const signOutUser = async () => {
       await signOut()
       setUser(null)
-      history.push('/')
+      history.push('/CyaLatteAlligatte')
     }
     signOutUser()
   }, [history, setUser])
