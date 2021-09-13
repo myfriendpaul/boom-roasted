@@ -9,6 +9,7 @@ const insertData = async () => {
   const user1 = new User({
     username: "paul1",
     email: "paul1@gmail.com",
+    password: "0805",
     password_digest: await bcrypt.hash("!a$ecureP@ssw0Rd55!", 11),
   });
   await user1.save();
