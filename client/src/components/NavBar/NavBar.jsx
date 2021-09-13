@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const authenticatedOptions = (
   <>
-    <NavLink className="Link" to="/productCreate">
+    <NavLink className="Link" to="/add-product">
       Custom Order
     </NavLink>
     <NavLink className="Link" to="/sign-out">
