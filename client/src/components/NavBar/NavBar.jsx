@@ -30,18 +30,18 @@ const alwaysOptions = (
     </NavLink>
   </>
 );
-const NavBar = () => {
+const NavBar = ({ user }) => {
   return (
     <div className="Nav">
       <NavLink className="Logo" to="/"></NavLink>
       <NavLink className="logo" to="/">
         ProductsApp
       </NavLink>
-      {/* <div className="links">
+      <div className="links">
         {user && <div className="link welcome">Welcome, {user.username}</div>}
         {alwaysOptions}
         {user ? authenticatedOptions : unauthenticatedOptions}
-      </div> */}
+      </div>
     </div>
   );
 };
