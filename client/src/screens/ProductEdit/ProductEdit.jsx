@@ -45,11 +45,7 @@ const ProductEdit = (props) => {
     <Layout user={props.user}>
       <div className="product-edit">
         <div className="image-container">
-          <img
-            className="edit-product-image"
-            src={product.imgURL}
-            alt={product.name}
-          />
+          
           <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image-link"
