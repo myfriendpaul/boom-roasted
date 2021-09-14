@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { deleteProduct, getProduct } from "../../services/products";
+import { useParams, Link } from "react-router-dom";
+import {
+  deleteProduct,
+  getProduct,
+  updateProduct,
+} from "../../services/products";
 import Layout from "../../components/Layout/Layout";
 import "./ProductDetail.css";
 
@@ -55,7 +59,14 @@ const ProductDetail = (props) => {
         </div>
 
         <div className="edit-button-div">
-          <button className="edit-button">Edit</button>
+          <Link to={`/products/${product._id}/edit`}>
+            <button
+              className="edit-button"
+              onClick={() => updateProduct(product.id)}
+            >
+              Edit
+            </button>
+          </Link>
         </div>
       </Layout>
     </>
