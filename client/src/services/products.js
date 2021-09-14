@@ -12,6 +12,7 @@ export const getProducts = async () => {
 export const getProduct = async (id) => {
   try {
     const response = await api.get(`/products/${id}`);
+    console.log("this is the response.data!", response.data);
     return response.data;
   } catch (error) {
     console.log(error);

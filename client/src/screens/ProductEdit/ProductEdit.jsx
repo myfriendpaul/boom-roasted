@@ -18,6 +18,8 @@ const ProductEdit = (props) => {
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getProduct(id);
+      console.log("this is the id", id);
+      console.log("this is the fetch product", product);
       setProduct(product);
     };
     fetchProduct();
