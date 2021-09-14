@@ -59,14 +59,7 @@ const ProductDetail = (props) => {
         </div>
 
         <div className="edit-button-div">
-          <Link to={`/products/${product._id}/edit`}>
-            <button
-              className="edit-button"
-              onClick={() => updateProduct(product.id)}
-            >
-              Edit
-            </button>
-          </Link>
+          <Link to={`/products/${product._id}/edit`}>Edit</Link>
         </div>
       </Layout>
     </>
