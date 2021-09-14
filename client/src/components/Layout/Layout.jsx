@@ -1,6 +1,6 @@
 import "./Layout.css";
 import NavBar from "../NavBar/NavBar";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 import React from "react";
 
@@ -12,10 +12,7 @@ const Layout = (props) => {
           <NavBar user={props.user} />
         </div>
         <div className="layout-children">
-          <Link to="/product-info/id">
-          {props.children}
-          </Link>
-          
+          <Link to="/productList/id">{props.children}</Link>
         </div>
       </div>
     </>
