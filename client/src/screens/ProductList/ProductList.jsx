@@ -29,7 +29,7 @@ const ProductList = (props) => {
                   price={product.price}
                   key={index}
                 />
-                <button>I am button</button>
+                <button>Add to cart</button>
               </>
             );
           })}
