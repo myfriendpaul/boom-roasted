@@ -11,7 +11,8 @@ const Layout = (props) => {
           <Navigation user={props.user} />
         </div>
         <div className="layout-children">
-          <Link to="/productList/id">{props.children}</Link>
+        {props.children}
+          {/* <Link to='/products'>{props.children}</Link> */}
         </div>
       </div>
     </>

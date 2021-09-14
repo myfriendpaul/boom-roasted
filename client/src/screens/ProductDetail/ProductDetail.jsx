@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory, Redirect } from "react-router-dom";
 import {
   deleteProduct,
   getProduct,
@@ -8,25 +8,47 @@ import {
 import Layout from "../../components/Layout/Layout";
 import "./ProductDetail.css";
 
+
+
+
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-
   const { id } = useParams();
+  const params = useParams();
+  const [isDeleted, setDeleted] = useState(false);
+
 
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getProduct(id);
-      console.log(product);
+      console.log(product, "This is the deleted code");
       setProduct(product);
       setLoaded(true);
     };
     fetchProduct();
   }, [id]);
 
+  const handleDelete = async (event) => {
+    event.preventDefault();
+    const deleted = await deleteProduct(id, product);
+    setDeleted(deleted);
+  };
+
+
+
   if (!isLoaded) {
     return <h1>Loading</h1>;
   }
+
+  if (isDeleted) {
+    return <Redirect to='/productList' />;
+  }
+
+  // const thisProduct = props.product.find(product => id === product.id)
+  // if (!thisProduct) {
+  //   return (<p>Invalid ID</p>)
+  // }
 
   return (
     <>
@@ -42,20 +64,15 @@ const ProductDetail = (props) => {
             <div className="name">{product.name}</div>
             <div className="price">{product.price}</div>
             <div className="description">{product.description}</div>
+            <div className="add-cart-div">
+              <button className="add-cart">Add to cart</button>
+            </div>
           </div>
         </div>
 
-        <div className="add-cart-div">
-          <button className="add-cart">Add to cart</button>
-        </div>
 
         <div className="delete-button-div">
-          <button
-            className="delete-button"
-            onClick={() => deleteProduct(product.id)}
-          >
-            Delete
-          </button>
+          <Link to='/productList' onClick={handleDelete}>Delete</Link>        
         </div>
 
         <div className="edit-button-div">
