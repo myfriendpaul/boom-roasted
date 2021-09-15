@@ -7,6 +7,8 @@ import Popular from "../../components/Popular/Popular.jsx";
 const Home = (props) => {
   return (
     <>
+      <img src="https://imgur.com/wTkAT8z.jpg" className="background" />
+
       <Layout user={props.user}>
         <div className="home"></div>
       </Layout>
@@ -26,6 +28,9 @@ const Home = (props) => {
         </div>
       </div>
       {/* <Footer /> */}
+
+      <div className="random"></div>
+      <img src="https://imgur.com/jeZ7LEJ.jpg" className="background2" />
     </>
   );
 };
