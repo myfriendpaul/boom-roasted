@@ -28,7 +28,7 @@ const insertData = async () => {
       description: "Gives you what you need when you need it",
       price: "$9.99",
       origin: "Kona",
-      imgURL: "https://i.imgur.com/W0380gz.png",
+      imgURL: "https://i.imgur.com/IbI9hcE.png",
     },
     {
       name: "Alex's batch",
