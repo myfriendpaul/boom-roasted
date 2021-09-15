@@ -6,11 +6,11 @@ import React from "react";
 const Layout = (props) => {
   return (
     <>
-      <div className="layout">
-        <div className="navbar">
+      <div>
+        <div>
           <Navigation user={props.user} />
         </div>
-        <div className="layout-children">{props.children}</div>
+        <div>{props.children}</div>
       </div>
     </>
   );
