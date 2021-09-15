@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './SignUp.css'
 import { signUp } from '../../services/users'
 import { useHistory } from 'react-router-dom'
+import  Layout from '../../components/Layout/Layout'
+import  Navigation from '../../components/Navigation/Navigation'
 
 const SignUp = (props) => {
   const history = useHistory()
@@ -50,55 +52,64 @@ const SignUp = (props) => {
         </button>
       )
     } else {
-      return <button type='submit'>Sign Up</button>
+      return <button className='submitButton'type='submit'>Sign Up</button>
     }
   }
 
   const { username, email, password, passwordConfirmation } = form
 
   return (
-    <div className='form-container'>
-      <h3>Sign Up</h3>
-      <form onSubmit={onSignUp}>
-        <label>Username</label>
+    // <Layout user={props.user}>
+    <div className='signUp'>
+      <Navigation></Navigation>
+      <h3 className='h3SignUp'>SIGN UP</h3>
+      
+      <form className='inputForm'
+        onSubmit={onSignUp}>
+        <label id='labelSignUp'>Username</label>
+        <br />
         <input
           required
+          className='inputsize'
           type='text'
           name='username'
           value={username}
-          placeholder='Enter username'
           onChange={handleChange}
         />
-        <label>Email address</label>
+        <br />
+        <label id='labelSignUp'>Email address</label>
         <input
           required
+          className='inputsize'
           type='email'
           name='email'
           value={email}
-          placeholder='Enter email'
           onChange={handleChange}
         />
-        <label>Password</label>
+        <br />
+        <label id='labelSignUp'>Password</label>
         <input
           required
+          className='inputsize'
           name='password'
           value={password}
           type='password'
-          placeholder='Password'
           onChange={handleChange}
         />
-        <label>Password Confirmation</label>
+        <br />
+        <label id='labelSignUp'>Password Confirmation</label>
         <input
           required
+          className='inputsize'
           name='passwordConfirmation'
           value={passwordConfirmation}
           type='password'
-          placeholder='Confirm Password'
           onChange={handleChange}
         />
         {renderError()}
       </form>
-    </div>
+      </div>
+    // </Layout>
   )
 }
 
