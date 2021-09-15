@@ -1,5 +1,7 @@
-.Nav {
+#nav {
   background-color: red;
+  display: flex;
+  flex-direction: row;
 }
 
 

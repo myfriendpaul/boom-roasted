@@ -19,7 +19,7 @@ const Home = (props) => {
         <h1>Coffee Divider</h1>
       </div>
       <div className="most-popular-cards">
-        {/* <Popular /> */}
+        <Popular />
       </div>
       <div className="who-we-are">
         <h1>Who we are</h1>
