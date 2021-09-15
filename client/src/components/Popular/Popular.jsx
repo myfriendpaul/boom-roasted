@@ -7,7 +7,7 @@ const Popular = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const allProducts = await getProducts();
-      //algo that selects 3 random products then set popProducts to that, will be array of objects
+      //Algo that selects 3 random products then set popProducts to that, will be array of objects
       setPopProducts(popProducts);
     };
     fetchProducts();
