@@ -1,0 +1,17 @@
+.h3SignUp {
+ margin-top: 0px;
+}
+.signUp {
+background-image: url(https://i.imgur.com/iiMYF7H.jpg);
+background-size: cover;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90vh;
+  align-items: flex-end;
+  margin-top: 17%;
+  margin-right: 10%;
+}
