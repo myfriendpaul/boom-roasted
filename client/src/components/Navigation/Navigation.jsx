@@ -39,7 +39,58 @@ const alwaysOptions = (
 const Navigation = ({ user }) => {
   return (
     <>
-      <Navbar bg="light" variant="light">
+      <Navbar
+        expand="sm"
+        id="nav">
+        {/* <Container> */}
+          <Nav.Link as={Link} to="/">
+            
+
+            <img src="https://i.imgur.com/srxKhf3.png" alt="logo" height="100" width="150" />
+          </Nav.Link>
+            
+
+          <Navbar.Toggle  />
+
+          <Navbar.Collapse>
+
+            <Nav>
+            <Nav.Link>
+             
+              {user && <div className="link welcome">Welcome, {user.username}</div>}
+
+              
+
+              
+              
+              </Nav.Link>
+              <Nav.Link>
+
+        {alwaysOptions}
+              </Nav.Link>
+              <Nav.Link>
+
+        {user ? authenticatedOptions : unauthenticatedOptions}
+              </Nav.Link>
+              
+            </Nav>
+            </Navbar.Collapse>
+        {/* </Container> */}
+      </Navbar>
+              </>
+
+
+
+
+
+
+
+
+
+
+
+
+      /* <Navbar bg="light" variant="light" expand="sm">
     <Container className="Nav">
           <Nav.Link className="logo" as={Link} to="/">
             <img src="https://i.imgur.com/srxKhf3.png" alt="logo" height="100" width="150" />
@@ -58,14 +109,14 @@ const Navigation = ({ user }) => {
       
     </Nav>
     </Container>
-    </Navbar>
+    </Navbar> */
       
       
 
 
 
 
-    {/* <div className="Nav">
+    /* <div className="Nav">
       <NavLink className="Logo" to="/"></NavLink>
       <NavLink className="logo" to="/">
         Boom! Roasted
@@ -75,8 +126,8 @@ const Navigation = ({ user }) => {
         {alwaysOptions}
         {user ? authenticatedOptions : unauthenticatedOptions}
       </div>
-    </div> */}
-      </>
+    </div> */
+      
   );
 };
 

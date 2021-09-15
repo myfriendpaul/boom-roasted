@@ -1,6 +1,24 @@
 import { Link } from "react-router-dom";
 
+import { useEffect, useState } from "react"
+import Product from "../Product/Product";
+
 const Popular = () => {
+  const [popProducts, setPopProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      // const allProducts = await getProducts();
+      //Algo that selects 3 random products then set popProducts to that, will be array of objects
+      setPopProducts(popProducts);
+    };
+    fetchProducts();
+  }, []);
+
+
+
+const Popular = () => {
+
   return (
     <div>
       <Link to="/products/614217046e043ffccc8940a1">
