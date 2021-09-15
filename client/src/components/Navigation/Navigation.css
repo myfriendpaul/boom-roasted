@@ -1,5 +1,62 @@
-.Nav {
-  background-color: red;
+.nav-border {
+  background-color: lightgray;
+  
+  display: flex;
 }
+
+#nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 3;
+}
+
+.auth-menu,
+.unauth-menu,
+.both-menu {
+  display: flex;
+  align-self: flex-end;
+  position: relative;
+  left: 50vw;
+  z-index: 3;
+}
+
+.logo-home {
+  display: flex;
+  align-self: flex-end;
+  z-index: 3;
+}
+
+@media screen and (max-width: 900px) {
+  .auth-menu,
+.unauth-menu,
+.both-menu {
+
+  display: flex;
+  align-self: flex-end;
+  position: relative;
+  left: 30vw;
+  z-index: 3;
+
+}
+}
+
+@media screen and (max-width: 650px) {
+  .auth-menu,
+.unauth-menu,
+.both-menu {
+
+  position: relative;
+  left: 1vw;
+  z-index: 3;
+
+  }
+}
+
+
+
+
+
+
 
 
