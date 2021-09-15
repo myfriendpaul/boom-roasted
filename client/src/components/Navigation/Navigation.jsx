@@ -38,7 +38,7 @@ const alwaysOptions = (
 const Navigation = ({ user }) => {
   return (
     <>
-      <Navbar expand="lg" id="nav">
+      <Navbar expand="md" className="nav">
         {/* <Container> */}
         <div className="logo-home">
           <Nav.Link as={Link} to="/">
@@ -56,20 +56,18 @@ const Navigation = ({ user }) => {
         <Navbar.Collapse>
           <Nav>
             <div className="menu-border">
-
-            <div id="menu">
-
-            <Nav.Link>
-              {user && (
-                <div className="link welcome">Welcome, {user.username}</div>
-                )}
-            </Nav.Link>
-            <Nav.Link>{alwaysOptions}</Nav.Link>
-            <Nav.Link>
-              {user ? authenticatedOptions : unauthenticatedOptions}
-            </Nav.Link>
-                </div>
-                </div>
+              <div id="menu">
+                <Nav.Link>
+                  {user && (
+                    <div className="link welcome">Welcome, {user.username}</div>
+                  )}
+                </Nav.Link>
+                <Nav.Link>{alwaysOptions}</Nav.Link>
+                <Nav.Link>
+                  {user ? authenticatedOptions : unauthenticatedOptions}
+                </Nav.Link>
+              </div>
+            </div>
           </Nav>
         </Navbar.Collapse>
         {/* </Container> */}
