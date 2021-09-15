@@ -1,6 +1,24 @@
-/* body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(https://imgur.com/wTkAT8z.jpg);
-} */
+.background {
+  size: cover;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.random {
+  border: 2px black solid;
+  padding: 100px;
+  margin: 50px;
+  position: absolute;
+  top: 100vh;
+}
+
+.background2 {
+  size: cover;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 100vh;
+}
