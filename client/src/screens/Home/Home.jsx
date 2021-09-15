@@ -4,8 +4,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Popular from "../../components/Popular/Popular.jsx";
 
-
-
 const Home = (props) => {
   return (
     <>
@@ -19,7 +17,7 @@ const Home = (props) => {
         <h1>Coffee Divider</h1>
       </div>
       <div className="most-popular-cards">
-        {/* <Popular /> */}
+        <Popular />
       </div>
       <div className="who-we-are">
         <h1>Who we are</h1>
