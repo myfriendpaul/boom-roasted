@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import { useEffect, useState } from "react"
 import Product from "../Product/Product";
 
@@ -14,17 +15,36 @@ const Popular = () => {
     fetchProducts();
   }, []);
 
+
+
+const Popular = () => {
+
   return (
-    <div className="products">
-      {popProducts.map((product, index) => (
-        <Product
-          id={product._id}
-          name={product.name}
-          imgURL={product.imgURL}
-          price={product.price}
-          key={index}
+    <div>
+      <Link to="/products/614217046e043ffccc8940a1">
+        <h3>Andrew's Cup</h3>
+        <img
+          src="https://i.imgur.com/lgljKKl.png"
+          alt="Cool Cup"
+          height="100px"
         />
-      ))}
+      </Link>
+      <Link to="/products/614217046e043ffccc8940a4">
+        <h3>Black Excellence</h3>
+        <img
+          src="https://i.imgur.com/W0380gz.png"
+          alt="Cool Beans"
+          height="100px"
+        />
+      </Link>
+      <Link to="/products/614217046e043ffccc8940a5">
+        <h3>Nadia's Blend</h3>
+        <img
+          src="https://i.imgur.com/W0380gz.png"
+          alt="Cooler Beans"
+          height="100px"
+        />
+      </Link>
     </div>
   );
 };
