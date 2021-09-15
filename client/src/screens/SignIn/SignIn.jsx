@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./SignIn.css";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
+import  Navigation from '../../components/Navigation/Navigation'
+
 
 const SignIn = (props) => {
   const history = useHistory();
@@ -42,7 +44,7 @@ const SignIn = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type="submit" className={toggleForm}>
+        <button id='buttonEnter' type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
       );
@@ -55,10 +57,15 @@ const SignIn = (props) => {
 
   return (
     <div className="form-container">
-      <h3>Sign In</h3>
-      <form onSubmit={onSignIn}>
-        <label>Email</label>
+      <Navigation></Navigation>
+
+      <h3 className="h3SignIn" >Sign In</h3>
+      <form
+        className="form"
+        onSubmit={onSignIn}>
+        <label id='label'>Email</label>
         <input
+          className="input"
           required
           type="text"
           name="email"
@@ -66,8 +73,9 @@ const SignIn = (props) => {
           placeholder="Enter Email"
           onChange={handleChange}
         />
-        <label>Password</label>
+        <label id='label'>Password</label>
         <input
+          className="input"
           required
           name="password"
           value={password}
