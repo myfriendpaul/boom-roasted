@@ -5,33 +5,42 @@ import Nav from 'react-bootstrap/Nav'
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 
+
+
 const authenticatedOptions = (
   <>
+    <div className='auth-menu'>
     <Nav.Link className="Link" as={Link} to="/add-product">
       Custom Order
     </Nav.Link>
     <Nav.Link className="Link" as={Link} to="/sign-out">
       Sign Out
     </Nav.Link>
+      </div>
+      
   </>
-);
-
+    );
+  
 const unauthenticatedOptions = (
   <>
+    <div className='unauth-menu'>
     <Nav.Link className="Link" as={Link} to="/sign-up">
       Sign Up
     </Nav.Link>
     <Nav.Link className="Link" as={Link} to="/sign-in">
       Sign In
-    </Nav.Link>
+      </Nav.Link>
+    </div>
   </>
 );
 
 const alwaysOptions = (
   <>
+    <div className='both-menu'>
     <Nav.Link className="Link" as={Link} to="/productList">
       Products
-    </Nav.Link>
+      </Nav.Link>
+      </div>
   </>
 );
 
@@ -39,10 +48,12 @@ const alwaysOptions = (
 const Navigation = ({ user }) => {
   return (
     <>
+    <div className="nav-border">
       <Navbar
         expand="sm"
         id="nav">
         {/* <Container> */}
+      <div className="logo-home">
           <Nav.Link as={Link} to="/">
             
 
@@ -51,7 +62,9 @@ const Navigation = ({ user }) => {
             
 
           <Navbar.Toggle  />
-
+          </div>
+          
+          
           <Navbar.Collapse>
 
             <Nav>
@@ -76,7 +89,8 @@ const Navigation = ({ user }) => {
             </Nav>
             </Navbar.Collapse>
         {/* </Container> */}
-      </Navbar>
+        </Navbar>
+        </div>
               </>
 
 
