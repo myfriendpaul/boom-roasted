@@ -10,10 +10,7 @@ const Layout = (props) => {
         <div className="navbar">
           <Navigation user={props.user} />
         </div>
-        <div className="layout-children">
-        {props.children}
-          {/* <Link to='/products'>{props.children}</Link> */}
-        </div>
+        <div className="layout-children">{props.children}</div>
       </div>
     </>
   );

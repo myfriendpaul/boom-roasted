@@ -1,6 +1,8 @@
 import "./Home.css";
 import Layout from "../../components/Layout/Layout";
 import React from "react";
+import { Link } from "react-router-dom";
+import Popular from "../../components/Popular/Popular.jsx";
 
 
 
@@ -11,15 +13,13 @@ const Home = (props) => {
         <div className="home"></div>
       </Layout>
       <div className="shop-now-btn">
-        <button>Shop Now</button>
+        <Link to="/productList">Shop Now</Link>
       </div>
       <div className="divider">
         <h1>Coffee Divider</h1>
       </div>
       <div className="most-popular-cards">
-        <h1>
-        Most popular products
-        </h1>
+        <Popular />
       </div>
       <div className="who-we-are">
         <h1>Who we are</h1>

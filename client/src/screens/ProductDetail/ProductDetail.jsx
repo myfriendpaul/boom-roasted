@@ -8,16 +8,12 @@ import {
 import Layout from "../../components/Layout/Layout";
 import "./ProductDetail.css";
 
-
-
-
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
   const params = useParams();
   const [isDeleted, setDeleted] = useState(false);
-
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -35,14 +31,12 @@ const ProductDetail = (props) => {
     setDeleted(deleted);
   };
 
-
-
   if (!isLoaded) {
     return <h1>Loading</h1>;
   }
 
   if (isDeleted) {
-    return <Redirect to='/productList' />;
+    return <Redirect to="/productList" />;
   }
 
   // const thisProduct = props.product.find(product => id === product.id)
@@ -70,9 +64,10 @@ const ProductDetail = (props) => {
           </div>
         </div>
 
-
         <div className="delete-button-div">
-          <Link to='/productList' onClick={handleDelete}>Delete</Link>        
+          <Link to="/productList" onClick={handleDelete}>
+            Delete
+          </Link>
         </div>
 
         <div className="edit-button-div">
