@@ -4,6 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import { getProducts } from "../../services/products";
 import Product from "../../components/Product/Product";
 import { Link, Route } from "react-router-dom";
+import Popular from "../../components/Popular/Popular";
 
 const ProductList = (props) => {
   const [products, setProducts] = useState([]);
@@ -30,6 +31,15 @@ const ProductList = (props) => {
                   price={product.price}
                   key={index}
                 />
+                {/* <Route exact path="/">
+                  <Popular
+                    id={product._id}
+                    name={product.name}
+                    imgURL={product.imgURL}
+                    price={product.price}
+                    key={index}
+                  />
+                </Route> */}
               </>
             );
           })}

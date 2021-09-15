@@ -18,7 +18,7 @@ const ProductDetail = (props) => {
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getProduct(id);
-      // console.log(product, "This is the deleted code");
+      console.log(product, "This is the deleted code");
       setProduct(product);
       setLoaded(true);
     };
