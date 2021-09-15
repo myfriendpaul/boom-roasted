@@ -5,26 +5,16 @@ import { Card, Button } from "react-bootstrap";
 const Product = (props) => {
   return (
     <>
-      <Card style={{ width: "20rem" }}>
-        <Card.Img
-          variant="top"
-          href={`/products/${props.id}`}
-          src={props.imgURL}
-        />
-        <Card.Body>
-          <Card.Title>
-            <Link className="productList" to={`/products/${props.id}`}>
-              {props.name}
-            </Link>
-          </Card.Title>
-          <Card.Text>{props.price}</Card.Text>
-          <button>
-            <Link className="productList" to={`/products/${props.id}`}>
-              Add
-            </Link>
-          </button>
-        </Card.Body>
-      </Card>
+      <Link className="productList" to={`/products/${props.id}`}>
+        <Card style={{ width: "20rem" }}>
+          <Card.Img variant="top" src={props.imgURL} />
+          <Card.Body>
+            <Card.Title>{props.name}</Card.Title>
+            <Card.Text>{props.price}</Card.Text>
+            <button>Add</button>
+          </Card.Body>
+        </Card>
+      </Link>
     </>
   );
 };
