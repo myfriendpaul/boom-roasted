@@ -1,17 +1,58 @@
 .h3SignUp {
- margin-top: 0px;
+  display: flex;
+  margin-left: 600px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 60px;
+
+
+  
 }
 .signUp {
 background-image: url(https://i.imgur.com/iiMYF7H.jpg);
-background-size: cover;
+background-repeat: no-repeat;
+background-size: 100%;
+/* background-position: center center; */
 }
 
 .inputForm {
+  /* border: 2px blue solid; */
   display: flex;
+  width: 50%;;
+  margin-left: 40%;
   flex-direction: column;
   justify-content: space-around;
   height: 90vh;
   align-items: flex-end;
   margin-top: 17%;
   margin-right: 10%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  
+}
+
+
+
+.inputsize {
+  padding: 15px 80px;
+  outline: none;
+  border: none;
+  margin-left: 25px;
+
+}
+
+
+
+.submitButton {
+  border: none;
+  color: white;
+  background-color: rgb(37, 66, 89);
+  padding: 10px 30px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-bottom: 400px;
+  margin-top:25px;
+  margin-right: 100px;;
+
+
+
+
 }

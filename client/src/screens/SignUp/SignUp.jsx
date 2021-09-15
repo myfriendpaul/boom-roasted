@@ -52,7 +52,7 @@ const SignUp = (props) => {
         </button>
       )
     } else {
-      return <button type='submit'>Sign Up</button>
+      return <button className='submitButton'type='submit'>Sign Up</button>
     }
   }
 
@@ -62,47 +62,48 @@ const SignUp = (props) => {
     // <Layout user={props.user}>
     <div className='signUp'>
       <Navigation></Navigation>
-      <h3 className='h3SignUp'>Sign Up</h3>
+      <h3 className='h3SignUp'>SIGN UP</h3>
+      
       <form className='inputForm'
         onSubmit={onSignUp}>
-        <label>Username</label>
+        <label id='labelSignUp'>Username</label>
+        <br />
         <input
           required
           className='inputsize'
           type='text'
           name='username'
           value={username}
-          placeholder='Enter username'
           onChange={handleChange}
         />
-        <label>Email address</label>
+        <br />
+        <label id='labelSignUp'>Email address</label>
         <input
           required
           className='inputsize'
           type='email'
           name='email'
           value={email}
-          placeholder='Enter email'
           onChange={handleChange}
         />
-        <label>Password</label>
+        <br />
+        <label id='labelSignUp'>Password</label>
         <input
           required
           className='inputsize'
           name='password'
           value={password}
           type='password'
-          placeholder='Password'
           onChange={handleChange}
         />
-        <label>Password Confirmation</label>
+        <br />
+        <label id='labelSignUp'>Password Confirmation</label>
         <input
           required
           className='inputsize'
           name='passwordConfirmation'
           value={passwordConfirmation}
           type='password'
-          placeholder='Confirm Password'
           onChange={handleChange}
         />
         {renderError()}
