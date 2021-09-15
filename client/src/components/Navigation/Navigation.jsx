@@ -1,9 +1,9 @@
 import "./Navigation.css";
-import { Link } from "react-router-dom"
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import React from 'react'
-import Container from 'react-bootstrap/Container'
+import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import React from "react";
+import Container from "react-bootstrap/Container";
 
 const authenticatedOptions = (
   <>
@@ -35,62 +35,48 @@ const alwaysOptions = (
   </>
 );
 
-
 const Navigation = ({ user }) => {
   return (
     <>
-      <Navbar
-        expand="sm"
-        id="nav">
+      <Navbar expand="lg" id="nav">
         {/* <Container> */}
+        <div className="logo-home">
           <Nav.Link as={Link} to="/">
-            
-
-            <img src="https://i.imgur.com/srxKhf3.png" alt="logo" height="100" width="150" />
+            <img
+              src="https://i.imgur.com/srxKhf3.png"
+              alt="logo"
+              height="100"
+              width="150"
+            />
           </Nav.Link>
-            
+        </div>
 
-          <Navbar.Toggle  />
+        <Navbar.Toggle />
 
-          <Navbar.Collapse>
+        <Navbar.Collapse>
+          <Nav>
+            <div className="menu-border">
 
-            <Nav>
+            <div id="menu">
+
             <Nav.Link>
-             
-              {user && <div className="link welcome">Welcome, {user.username}</div>}
-
-              
-
-              
-              
-              </Nav.Link>
-              <Nav.Link>
-
-        {alwaysOptions}
-              </Nav.Link>
-              <Nav.Link>
-
-        {user ? authenticatedOptions : unauthenticatedOptions}
-              </Nav.Link>
-              
-            </Nav>
-            </Navbar.Collapse>
+              {user && (
+                <div className="link welcome">Welcome, {user.username}</div>
+                )}
+            </Nav.Link>
+            <Nav.Link>{alwaysOptions}</Nav.Link>
+            <Nav.Link>
+              {user ? authenticatedOptions : unauthenticatedOptions}
+            </Nav.Link>
+                </div>
+                </div>
+          </Nav>
+        </Navbar.Collapse>
         {/* </Container> */}
       </Navbar>
-              </>
+    </>
 
-
-
-
-
-
-
-
-
-
-
-
-      /* <Navbar bg="light" variant="light" expand="sm">
+    /* <Navbar bg="light" variant="light" expand="sm">
     <Container className="Nav">
           <Nav.Link className="logo" as={Link} to="/">
             <img src="https://i.imgur.com/srxKhf3.png" alt="logo" height="100" width="150" />
@@ -110,11 +96,6 @@ const Navigation = ({ user }) => {
     </Nav>
     </Container>
     </Navbar> */
-      
-      
-
-
-
 
     /* <div className="Nav">
       <NavLink className="Logo" to="/"></NavLink>
@@ -127,7 +108,6 @@ const Navigation = ({ user }) => {
         {user ? authenticatedOptions : unauthenticatedOptions}
       </div>
     </div> */
-      
   );
 };
 
