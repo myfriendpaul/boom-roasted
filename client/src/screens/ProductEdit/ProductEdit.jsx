@@ -3,6 +3,8 @@ import "./ProductEdit.css";
 import { useParams, Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import { getProduct, updateProduct } from "../../services/products";
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 const ProductEdit = (props) => {
   const [product, setProduct] = useState({
@@ -45,13 +47,9 @@ const ProductEdit = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="product-edit">
-        <div className="image-container">
-          <img
-            className="edit-product-image"
-            src={product.imgURL}
-            alt={product.name}
-          />
+      {/* <div className="product-edit"> */}
+        {/* <div className="image-container">
+          
           <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image-link"
@@ -62,8 +60,77 @@ const ProductEdit = (props) => {
               onChange={handleChange}
             />
           </form>
-        </div>
-        <form className="edit-form" onSubmit={handleSubmit}>
+        </div> */}
+
+  
+
+
+        <Form className="edit-form">
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Image: </Form.Label>
+            <br />
+            <Form.Control
+              placeholder="Image Link"
+              value={product.imgURL}
+              name="imgURL"
+              required
+              onChange={handleChange}
+
+            />
+          </Form.Group>
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Name: </Form.Label>
+            <br />
+            <Form.Control
+              type="text"
+              placeholder="name"
+              value={product.name}
+              name="name"
+            required
+            autoFocus
+            onChange={handleChange}
+            />
+          </Form.Group>
+          
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Description: </Form.Label>
+        <br />
+            <Form.Control
+              as="textarea"
+              rows={5}
+              placeholder="Description"
+            value={product.description}
+            name="description"
+            required
+            onChange={handleChange}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Price: </Form.Label>
+            <br />
+            <Form.Control
+              type="email"
+              placeholder="Price"
+              value={product.price}
+              name="price"
+              required
+              onChange={handleChange}
+
+            />
+          </Form.Group>
+          <div className="d-grid gap-2">
+  
+  <Button variant="secondary" size="lg" type="submit">
+    Save
+  </Button>
+</div>
+</Form>
+
+
+
+        {/* <form className="edit-form" onSubmit={handleSubmit}>
           <input
             className="input-name"
             placeholder="Name"
@@ -94,8 +161,8 @@ const ProductEdit = (props) => {
           <button type="submit" className="save-button">
             Save
           </button>
-        </form>
-      </div>
+        </form> */}
+      {/* </div> */}
     </Layout>
   );
 };
