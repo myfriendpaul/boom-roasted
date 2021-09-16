@@ -24,7 +24,7 @@
 .card {
   height: 450px;
   margin: 20px 25px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .card-img-top {
   height: 60%;

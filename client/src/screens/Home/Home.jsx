@@ -7,14 +7,22 @@ import Popular from "../../components/Popular/Popular.jsx";
 const Home = (props) => {
   return (
     <>
-      
-
-      <Layout user={props.user}>
-        <div className="home"></div>
-      </Layout>
-      <div className="shop-now-btn">
-        <Link to="/productList">Shop Now</Link>
+      <div className="background-group">
+        <Layout user={props.user}>
+          <div className="home"></div>
+        </Layout>
+        <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" />
+        <div className="random"></div>
+        <img
+          src="https://imgur.com/jeZ7LEJ.jpg"
+          className="background-bottom"
+        />
       </div>
+      <button className="shop-now-btn">
+        <Link className="shop-link" to="/productList">
+          Shop Now
+        </Link>
+      </button>
       <div className="divider">
         <h1>Coffee Divider</h1>
       </div>
@@ -28,13 +36,6 @@ const Home = (props) => {
         </div>
       </div>
       {/* <Footer /> */}
-
-
-      <div className="random"></div>
-      {/* <img src="https://imgur.com/jeZ7LEJ.jpg" className="background2" /> */}
-
-           
-
     </>
   );
 };
