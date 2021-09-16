@@ -2,23 +2,22 @@
   size: cover;
   position: absolute;
   z-index: -1;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-.random {
+/* .random {
   border: 2px black solid;
   padding: 100px;
   margin: 50px;
   position: absolute;
-  top: 100vh;
-}
+  /* top: 100vh; */
 
 .background2 {
   size: cover;
   position: relative;
   z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 100vh;
+  max-width: 100%;
+  height: auto;
+  top: 1vh;
 }
