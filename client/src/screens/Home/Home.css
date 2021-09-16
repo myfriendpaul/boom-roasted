@@ -20,7 +20,8 @@ body {
   opacity: 0.9;
   filter: blur(3px);
   margin-bottom: 0.5%;
-  border: 10px black solid;
+
+  margin-top: -132px;
 }
 
 #title-quote {
