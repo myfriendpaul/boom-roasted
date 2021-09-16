@@ -1,0 +1,24 @@
+.pop-products {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: lightblue;
+  position: relative;
+  top: 50vh;
+}
+
+
+#popular-items {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+
+
+.popular-items-links {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  letter-spacing: 2px;
+}

@@ -12,16 +12,17 @@ const Home = (props) => {
         <Layout user={props.user}>
           <div className="home"></div>
 
+
           {/* <Navigation /> */}
           <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" />
 
           <div className="quote-block">
-            <p id="title-quote">Coffee for the heart and mind.</p>
+            {/* <p id="title-quote">Coffee for the heart and mind.</p>
             <p>
               Coffee that will satisfy your everyday taste. From cold brew to
               roasted hot, we're sure that every cup you have will be a cup of
               joy.
-            </p>
+            </p> */}
           </div>
           <div>
             <button className="shop-now-btn">
@@ -30,22 +31,30 @@ const Home = (props) => {
               </Link>
             </button>
           </div>
+          <div className="random"></div>
+          <div className="popular-container">
           <div className="most-popular-cards">
             <Popular />
           </div>
           {/* <div className="who-we-are">
             <h1>Who we are</h1>
             <div className="p-who-we-are">
-              <div className="who-we-are-image"></div>
+            <div className="who-we-are-image"></div>
             </div>
           </div> */}
-          <div className="random"></div>
+          <div>
+          </div>
           <img
             src="https://imgur.com/jeZ7LEJ.jpg"
             className="background-bottom"
             alt="coffee"
-          />
-        </Layout>
+            />
+            </div>
+            <Link to="Support-us-on-GitHub">
+            <button>GitHub</button>
+            </Link>
+    </Layout>
+
       </div>
 
       {/* <Footer /> */}
