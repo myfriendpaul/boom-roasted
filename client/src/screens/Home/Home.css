@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 .background-group {
   display: flex;
   flex-direction: column;
@@ -6,47 +11,53 @@
 
 .background-top {
   display: flex;
-  size: cover;
-  /* position: relative; */
+  /* size: cover; */
+  /* position: absolute; */
   z-index: -1;
   width: 100%;
   height: 80%;
   filter: alpha(Opacity=90);
   opacity: 0.9;
   filter: blur(3px);
+  margin-bottom: 0.5%;
+
+  margin-top: -132px;
 }
 
 #title-quote {
   font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: 5rem;
-    letter-spacing: 1.5px;
-    
+  font-size: 5rem;
+  letter-spacing: 1.5px;
 }
 
 .quote-block {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 25px 5px 25px;
-    justify-content: center;
-    margin: 100px 0;
-    width: 60%;
-    left: 50%;
-    top: 46%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: 3rem;
-    letter-spacing: 1.5px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 25px 5px 25px;
+  justify-content: center;
+  margin: 100px 0;
+  width: 60%;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .random {
-  display: flex;
-  border: 2px black solid;
-  padding: 100px;
-  width: 100%;
-  height: 20%;
+  background-image: url(https://i.imgur.com/R9y07Wo.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  padding: 15px;
+  /* width: 100%; */
+  /* height: 20%; */
+  /* margin: 5px 0; */
   /* position: absolute; */
   /* margin-bottom: -20vh; */
 }
@@ -57,21 +68,21 @@
   z-index: -1;
   width: 100%;
   height: 80%;
-  /* margin-top: 50%; */
+  margin-top: 0.5%;
 }
 
 .shop-now-btn {
   /* border: none; */
   color: white;
-  background-color: #4D6E7F;
+  background-color: #4d6e7f;
   padding: 10px 30px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5rem;
-  left: 76.5%;
-    top: 68%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    letter-spacing: 1.5px;
+  left: 77.1%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 1.5px;
   /* margin-bottom: 400px; */
   /* margin-top: 25px;
   margin-right: 100px; */
@@ -82,4 +93,10 @@
   text-decoration: none;
   font-size: 1em;
   color: white;
+}
+
+.most-popular-cards {
+  /* left: 50%; */
+  /* top: 46%; */
+  /* transform: translate(-50%, -50%); */
 }
