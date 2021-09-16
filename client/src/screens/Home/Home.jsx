@@ -34,7 +34,6 @@ const Home = (props) => {
             </div>
           </div> */}
 
-          <div></div>
           <div id="white-background">
             {/* <div id="background-div"> */}
 
