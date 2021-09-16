@@ -122,7 +122,9 @@ const ProductEdit = (props) => {
           </Form.Group>
           <div className="d-grid gap-2">
   
-  <Button variant="secondary" size="lg" type="submit">
+          <Button variant="secondary" size="lg" type="submit"
+          onClick={handleSubmit}
+          >
     Save
   </Button>
 </div>
