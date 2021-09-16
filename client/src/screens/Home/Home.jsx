@@ -10,26 +10,22 @@ const Home = (props) => {
     <>
       <div className="background-group">
         <Layout user={props.user}>
-          <div className="home"></div>
+          {/* <div className="home"></div> */}
 
-          {/* <Navigation /> */}
-          <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" />
-
-          <div className="quote-block">
-            {/* <p id="title-quote">Coffee for the heart and mind.</p>
-            <p>
-              Coffee that will satisfy your everyday taste. From cold brew to
-              roasted hot, we're sure that every cup you have will be a cup of
-              joy.
-            </p> */}
-          </div>
-          <div>
-            <button className="shop-now-btn">
+          <div className="background-top">
+            <div className="quote-block">
+              <p id="title-quote">Coffee for the heart and mind.</p>
+              <p>
+                Coffee that will satisfy your everyday taste. From cold brew to
+                roasted hot, we're sure that every cup you have will be a cup of
+                joy.
+              </p>
               <Link className="shop-link" to="/productList">
-                SHOP NOW
+                <button className="shop-now-btn">SHOP NOW</button>
               </Link>
-            </button>
+            </div>
           </div>
+
           <div className="random"></div>
           {/* <div className="who-we-are">
             <h1>Who we are</h1>
