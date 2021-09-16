@@ -83,11 +83,11 @@ const Home = (props) => {
             </div>
             {/* </div> */}
           </div>
-        </Layout>
-      </div>
+        
+      
+      </>
 
-      {/* <Footer /> */}
-    </>
+      /* <Footer /> */
   );
 };
 
