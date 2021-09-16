@@ -32,6 +32,7 @@
   /* margin-top: 50%; */
 }
 
+
 .shop-now-btn {
   /* border: none; */
   color: white;
@@ -39,6 +40,26 @@
   padding: 10px 30px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5rem;
+
+.top-background-image {
+  width: fit-content; 
+ position: relative; 
+  z-index: -1;
+  height: 100vh;
+  width: fit-content;
+  margin-bottom: 100px;
+}
+
+.divider {
+  border: 5px solid black;
+}
+
+.most-popular-cards {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
 
   /* margin-bottom: 400px; */
   margin-top: 25px;

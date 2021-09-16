@@ -7,6 +7,7 @@ import Popular from "../../components/Popular/Popular.jsx";
 const Home = (props) => {
   return (
     <>
+
       <div className="background-group">
         <Layout user={props.user}>
           <div className="home"></div>
@@ -23,9 +24,11 @@ const Home = (props) => {
           Shop Now
         </Link>
       </button>
+
       <div className="divider">
         <h1>Coffee Divider</h1>
       </div>
+      
       <div className="most-popular-cards">
         <Popular />
       </div>
@@ -36,6 +39,7 @@ const Home = (props) => {
         </div>
       </div>
       {/* <Footer /> */}
+
     </>
   );
 };

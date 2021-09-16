@@ -7,6 +7,7 @@ import {
 } from "../../services/products";
 import Layout from "../../components/Layout/Layout";
 import "./ProductDetail.css";
+import { Button } from "react-bootstrap";
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -45,7 +46,7 @@ const ProductDetail = (props) => {
   // }
 
   return (
-    <>
+    <div className="wrap-detail">
       <Layout user={props.user}>
         <div className="product-detail">
           <img
@@ -60,21 +61,23 @@ const ProductDetail = (props) => {
             <div className="description">{product.description}</div>
             <div className="add-cart-div">
               <button className="add-cart">Add to cart</button>
+              <Link to="/productList" onClick={handleDelete}>
+                <Button variant="delete">Delete</Button>
+                <Link to={`/products/${product._id}/edit`}>
+                  <Button variant="edit">Edit</Button>
+                </Link>
+              </Link>
             </div>
           </div>
         </div>
 
-        <div className="delete-button-div">
-          <Link to="/productList" onClick={handleDelete}>
-            Delete
-          </Link>
-        </div>
+        {/* <div className="delete-button-div"> */}
+        {/* </div> */}
 
-        <div className="edit-button-div">
-          <Link to={`/products/${product._id}/edit`}>Edit</Link>
-        </div>
+        {/* <div className="edit-button-div"> */}
+        {/* </div> */}
       </Layout>
-    </>
+    </div>
   );
 };
 
