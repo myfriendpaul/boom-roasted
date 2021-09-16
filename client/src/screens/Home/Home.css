@@ -1,27 +1,45 @@
-/* .background {
-  size: cover;
-  position: absolute;
-  z-index: -1;
-  max-width: 100%;
-  height: auto;
+.background-group {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
-/* .random {
+.background-top {
+  display: flex;
+  size: cover;
+  /* position: relative; */
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+}
+
+.random {
+  display: flex;
   border: 2px black solid;
   padding: 100px;
-  margin: 50px;
-  position: absolute;
-  /* top: 100vh; */
-
-.background2 {
-  size: cover;
-  position: relative;
-  z-index: -1;
-
-  max-width: 100%;
-  height: auto;
-  top: 1vh;
+  width: 100%;
+  height: 20%;
+  /* position: absolute; */
+  /* margin-bottom: -20vh; */
 }
+
+.background-bottom {
+  size: cover;
+  /* position: relative; */
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+  /* margin-top: 50%; */
+}
+
+
+.shop-now-btn {
+  /* border: none; */
+  color: white;
+  background-color: rgb(37, 66, 89);
+  padding: 10px 30px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5rem;
 
 .top-background-image {
   width: fit-content; 
@@ -42,3 +60,15 @@
   flex-direction: row;
 }
 
+
+  /* margin-bottom: 400px; */
+  margin-top: 25px;
+  margin-right: 100px;
+}
+
+.shop-link,
+.shop-link:hover {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+}
