@@ -57,16 +57,22 @@ const ProductDetail = (props) => {
 
           <div className="info-detail">
             <div className="name">{product.name}</div>
+            <div id="bean-devider">
+              empty space
+              {/* <img id="bean-devider src="https://i.imgur.com/t2JrOJD.png" alt="devider" /> */}
+            </div>
             <div className="price">{product.price}</div>
             <div className="description">{product.description}</div>
-            <div className="add-cart-div">
-              <button className="add-cart">Add to cart</button>
+            <div className="all-btn-div">
+              <Link to="/shoppingCart" onClick={() => alert("Added to cart")}>
+                <Button className="add-cart">Add to cart</Button>
+              </Link>
               <Link to="/productList" onClick={handleDelete}>
                 <Button variant="delete">Delete</Button>
               </Link>
-                <Link to={`/products/${product._id}/edit`}>
-                  <Button variant="edit">Edit</Button>
-                </Link>
+              <Link to={`/products/${product._id}/edit`}>
+                <Button variant="edit">Edit</Button>
+              </Link>
             </div>
           </div>
         </div>

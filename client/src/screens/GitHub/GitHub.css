@@ -1,0 +1,113 @@
+.ferris_wheel ,.wheel {
+  /* border: 6px solid #fff; */
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.ferris_wheel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(1.4, 1.4);
+  border: 0;
+}
+
+.wheel_wrap {
+  position: absolute;
+  animation: wheel_rotate 200s infinite linear;
+}
+
+
+
+@keyframes wheel_rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.buckets {
+  position: absolute;
+  /* border: 6px solid #fff; */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.buckets div {
+  position: absolute;
+  animation: bucket_rotate 40s infinite linear;
+  top: 50%;
+  left: 50%;
+  margin-top: 100px;
+  margin-left: 100px;
+
+}
+
+@keyframes bucket_rotate {
+  0% { 
+    transform: rotate(0) translateX(200px) rotate(0); 
+  }
+  100% { 
+    transform: rotate(360deg) translateX(200px) rotate(-360deg); 
+  }
+}
+
+.buckets div:nth-child(2) {
+  animation-delay: -8s;
+}
+
+.buckets div:nth-child(3) {
+  animation-delay: -16s;
+}
+
+.buckets div:nth-child(4) {
+  animation-delay: -24s;
+}
+
+.buckets div:nth-child(5) {
+  animation-delay: -32s;
+}
+
+.andrew {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.paul {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.nadiya {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.alex {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.sean {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+#title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40vh;
+}
