@@ -63,10 +63,10 @@ const ProductDetail = (props) => {
               <button className="add-cart">Add to cart</button>
               <Link to="/productList" onClick={handleDelete}>
                 <Button variant="delete">Delete</Button>
+              </Link>
                 <Link to={`/products/${product._id}/edit`}>
                   <Button variant="edit">Edit</Button>
                 </Link>
-              </Link>
             </div>
           </div>
         </div>
