@@ -44,7 +44,7 @@ const Home = (props) => {
 
 
           {/* <Navigation /> */}
-          <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" />
+          <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" alt="logo" />
 
           <div className="quote-block">
             {/* <p id="title-quote">Coffee for the heart and mind.</p>
@@ -54,8 +54,8 @@ const Home = (props) => {
               joy.
             </p> */}
           </div>
-          <div>
-            <button className="shop-now-btn">
+          <div></div>
+            
 
           {/* <div className="home"></div> */}
 
