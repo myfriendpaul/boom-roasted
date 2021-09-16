@@ -15,8 +15,8 @@ const authenticatedOptions = (
     </Nav.Link>
     <Nav.Link className="Link" as={Link} to="/sign-out">
       Sign Out
-    </Nav.Link>
-      </div>
+      </Nav.Link>
+    </div>
       
   </>
     );
@@ -69,9 +69,9 @@ const Navigation = ({ user }) => {
 
             <Nav>
             <Nav.Link>
-             
+             <div className="welcome-user">
               {user && <div className="link welcome">Welcome, {user.username}</div>}
-
+            </div>
               
 
               
