@@ -100,9 +100,20 @@ body {
   border: 2px solid black;
   background-color: white;
   background-size: cover;
+  position: absolute;
   width: 100%;
   height: 80%;
   margin-top: 0.5%;
   padding-bottom: 100%;
+}
 
+.most-popular-cards {
+  /* text-align: center; */
+  width: 75%;
+  /* height: 100%; */
+}
+
+.popular-container {
+  display: flex;
+  justify-content: center;
 }
