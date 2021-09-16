@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./SignIn.css";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
-import  Navigation from '../../components/Navigation/Navigation'
+import Navigation from '../../components/Navigation/Navigation'
+import Layout from '../../components/Layout/Layout'
 
 
 const SignIn = (props) => {
@@ -56,8 +57,8 @@ const SignIn = (props) => {
   const { email, password } = form;
 
   return (
+      <Layout>
     <div className="form-container">
-      <Navigation></Navigation>
 
       <h3 className="h3SignIn" >Sign In</h3>
       <form
@@ -84,6 +85,7 @@ const SignIn = (props) => {
         {renderError()}
       </form>
     </div>
+    </Layout>
   );
 };
 

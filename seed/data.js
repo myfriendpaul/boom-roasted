@@ -20,15 +20,14 @@ const insertData = async () => {
       description: "A delicate piece of glassware",
       price: "$9.69",
       origin: "Ohio",
-
-      imgURL: "https://i.imgur.com/lgljKKl.png",
+      imgURL: "https://i.imgur.com/JXLSo7w.png",
     },
     {
       name: "Paul's blend",
       description: "Gives you what you need when you need it",
       price: "$9.99",
       origin: "Kona",
-      imgURL: "https://i.imgur.com/IbI9hcE.png",
+      imgURL: "https://i.imgur.com/W0380gz.png",
     },
     {
       name: "Alex's batch",

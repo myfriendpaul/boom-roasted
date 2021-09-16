@@ -10,6 +10,8 @@ import { verifyUser } from "./services/users";
 import SignUp from "./screens/SignUp/SignUp";
 import SignIn from "./screens/SignIn/SignIn";
 import SignOut from "./screens/SignOut/SignOut";
+import GitHub from "./screens/GitHub/GitHub"
+
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -48,6 +50,9 @@ const App = () => {
         </Route>
         <Route exact path="/products/:id">
           <ProductDetail user={user} />
+        </Route>
+        <Route exact path='/Support-us-on-GitHub'>
+          <GitHub />
         </Route>
       </Switch>
     </div>
