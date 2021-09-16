@@ -91,9 +91,9 @@
   padding: 10px 25px;
 }
 
-body {
+/* body {
   background-image: url(https://i.imgur.com/wmSygrC.jpg);
-}
+} */
 .navbar:hover {
   opacity: 1;
 }

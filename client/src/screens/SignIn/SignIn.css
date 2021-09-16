@@ -7,17 +7,25 @@
   }
 
 .h3SignIn {
-  border: 3px black solid;
   display: flex;
   margin-left: 650px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 60px;
 }
 
+#button {
+  border: none;
+  color: white;
+  background-color: rgb(37, 66, 89);
+  padding: 10px 30px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  /* margin-bottom: 400px; */
+  margin-top:25px;
+  margin-right: 100px;
+}
 
 
 .form {
-  border: 3px solid blue;
   display: flex;
   width: 50%;;
   margin-left: 40%;
