@@ -7,28 +7,37 @@ import Popular from "../../components/Popular/Popular.jsx";
 const Home = (props) => {
   return (
     <>
-
       <div className="background-group">
         <Layout user={props.user}>
           <div className="home"></div>
         </Layout>
         <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" />
+
+        <div className="quote-block">
+          <p>Coffee for the heart and mind.</p>
+          <p>
+            Coffee that will satisfy your everyday taste. From cold brew to
+            roasted hot, we’re sure that every cup you have will be a cup of
+            joy.
+          </p>
+          <button className="shop-now-btn">
+            <Link className="shop-link" to="/productList">
+              Shop Now
+            </Link>
+          </button>
+        </div>
         <div className="random"></div>
         <img
           src="https://imgur.com/jeZ7LEJ.jpg"
           className="background-bottom"
+          alt="coffee"
         />
       </div>
-      <button className="shop-now-btn">
-        <Link className="shop-link" to="/productList">
-          Shop Now
-        </Link>
-      </button>
 
       <div className="divider">
         <h1>Coffee Divider</h1>
       </div>
-      
+
       <div className="most-popular-cards">
         <Popular />
       </div>
@@ -39,7 +48,6 @@ const Home = (props) => {
         </div>
       </div>
       {/* <Footer /> */}
-
     </>
   );
 };
