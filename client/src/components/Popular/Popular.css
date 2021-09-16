@@ -1,18 +1,19 @@
 .pop-products {
   display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
+  flex-direction: row;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  background-color: lightblue;
+  background-color: white;
+  padding-bottom: 100%;
+  /* margin-bottom: -60%; */
+  align-items: center;
 }
-
 
 #popular-items {
   display: flex;
   justify-content: center;
-  background-color: red;
+  /* background-color: red; */
 }
-
 
 .popular-items-links {
   text-decoration: none;
