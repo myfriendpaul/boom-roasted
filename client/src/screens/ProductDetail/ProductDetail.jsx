@@ -69,11 +69,10 @@ const ProductDetail = (props) => {
 
               <Link to={`/products/${product._id}/edit`}>
                 <Button variant="edit">Edit</Button>
-
-                <Link to={`/products/${product._id}/edit`}>
-                  <Button variant="edit">Edit</Button>
-                </Link>
-
+              </Link>
+              <Link to={`/products/${product._id}/edit`}>
+                <Button variant="edit">Edit</Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Home = (props) => {
           <p id="title-quote">Coffee for the heart and mind.</p>
           <p>
             Coffee that will satisfy your everyday taste. From cold brew to
-            roasted hot, we’re sure that every cup you have will be a cup of
+            roasted hot, we're sure that every cup you have will be a cup of
             joy.
           </p>
         </div>
@@ -27,7 +27,6 @@ const Home = (props) => {
               SHOP NOW
             </Link>
           </button>
-
         </div>
         <div className="random"></div>
         <img
