@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 
 const authenticatedOptions = (
   <>
+
     <div className="auth-menu">
       <Nav.Link className="Link" as={Link} to="/add-product">
         Custom Order
@@ -15,6 +16,16 @@ const authenticatedOptions = (
         Sign Out
       </Nav.Link>
     </div>
+
+    <div className='auth-menu'>
+    <Nav.Link className="Link" as={Link} to="/add-product">
+      Custom Order
+    </Nav.Link>
+    <Nav.Link className="Link" as={Link} to="/sign-out">
+      Sign Out
+      </Nav.Link>
+    </div>
+
   </>
 );
 
@@ -62,6 +73,17 @@ const Navigation = ({ user }) => {
 
           <Navbar.Collapse>
             <Nav>
+
+            <Nav.Link>
+             <div className="welcome-user">
+              {user && <div className="link welcome">Welcome, {user.username}</div>}
+            </div>
+              
+
+              
+              
+              </Nav.Link>
+
               <Nav.Link>
                 {user && (
                   <div className="link welcome">Welcome, {user.username}</div>

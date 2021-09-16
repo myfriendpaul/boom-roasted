@@ -1,0 +1,12 @@
+.signOut {
+  background-image: url(https://i.imgur.com/iiMYF7H.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+#paragraph {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 60px;
+  margin-left: 300px;
+}

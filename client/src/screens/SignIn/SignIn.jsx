@@ -44,12 +44,12 @@ const SignIn = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button id='buttonEnter' type="submit" className={toggleForm}>
+        <button id='button' type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
       );
     } else {
-      return <button type="submit">Sign In</button>;
+      return <button id='button' type="submit">Sign In</button>;
     }
   };
 
@@ -70,7 +70,6 @@ const SignIn = (props) => {
           type="text"
           name="email"
           value={email}
-          placeholder="Enter Email"
           onChange={handleChange}
         />
         <label id='label'>Password</label>
@@ -80,7 +79,6 @@ const SignIn = (props) => {
           name="password"
           value={password}
           type="password"
-          placeholder="Password"
           onChange={handleChange}
         />
         {renderError()}

@@ -26,7 +26,7 @@ background-position: center center;
   justify-content: space-around;
   height: 50vh;
   align-items: flex-end;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-right: 10%;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 20px;
@@ -48,9 +48,8 @@ background-position: center center;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   margin-bottom: 400px;
   margin-top:25px;
-  margin-right: 100px;;
-
-
-
-
+  margin-right: 100px;
 }
+
+
+
