@@ -23,16 +23,22 @@
   font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 1px;
   padding: 5px;
+  color: black;
 }
 
 .price {
   font-size: 28px;
   padding-top: 20px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 26px;
 }
 
 .description {
   padding-top: 20px;
   letter-spacing: 0.9px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 24px;
+  color: black;
 }
 
 .product-detail-image {
