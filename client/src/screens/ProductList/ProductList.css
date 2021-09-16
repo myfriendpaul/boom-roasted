@@ -25,6 +25,7 @@
   height: 450px;
   margin: 20px 25px;
   display: inline-block;
+  border-radius: 0px;
 }
 .card-img-top {
   height: 60%;
@@ -44,19 +45,32 @@
   font-size: 20px;
   color: white;
   padding: 10px 25px;
+  border-radius: 0px;
 }
 
 .products {
-  background-image: url(https://i.imgur.com/wmSygrC.jpg);
+  background-image: url(https://i.imgur.com/wmSygrC.jpg?1);
   background-size: contain;
   background-position: center;
+  /* background-repeat: repeat-x; */
+  filter: alpha(Opacity=90);
+  opacity: 0.9;
+  /* height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
-.navbar:hover {
-  opacity: 1;
-}
+
 .list-wrapper {
   width: 80%;
   margin: 0 auto;
-  /* padding: 50px; */
   background-color: white;
+  filter: alpha(Opacity=90);
+  opacity: 0.9;
+  /* padding: 50px; */
+  /* background-color: rgb(242, 234, 234); */
+  /* display: -ms-flexbox;
+  display: -webkit-flex;
+  /* display: flex; */ 
+ 
 }
