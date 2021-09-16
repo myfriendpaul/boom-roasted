@@ -12,12 +12,16 @@ const Home = (props) => {
       <Layout user={props.user}>
         <div className="home"></div>
       </Layout>
+      <div className="top-background-image">
+        <img src="https://imgur.com/wTkAT8z.jpg" alt="" className="top-background-image" />
       <div className="shop-now-btn">
         <Link to="/productList">Shop Now</Link>
+      </div>
       </div>
       <div className="divider">
         <h1>Coffee Divider</h1>
       </div>
+      
       <div className="most-popular-cards">
         <Popular />
       </div>
@@ -31,7 +35,7 @@ const Home = (props) => {
 
 
       <div className="random"></div>
-      {/* <img src="https://imgur.com/jeZ7LEJ.jpg" className="background2" /> */}
+      <img src="https://imgur.com/jeZ7LEJ.jpg" className="background2" />
 
            
 
