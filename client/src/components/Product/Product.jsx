@@ -5,7 +5,7 @@ import { Card, Button } from "react-bootstrap";
 const Product = (props) => {
   return (
     <>
-      <Link className="productList" to={`/products/${props._id}`}>
+      <Link className="productList" to={`/products/${props.id}`}>
         <Card style={{ width: "20rem" }}>
           <Card.Img variant="top" src={props.imgURL} />
           <Card.Body>

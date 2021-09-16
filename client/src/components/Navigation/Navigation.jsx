@@ -47,6 +47,7 @@ const alwaysOptions = (
 const Navigation = ({ user }) => {
   return (
     <>
+    <div>
 
       <Navbar expand="md" className="nav">
         {/* <Container> */}
@@ -70,9 +71,9 @@ const Navigation = ({ user }) => {
 
         </div>
 
-        <Navbar.Toggle />
+        
 
-        <Navbar.Collapse>
+        {/* <Navbar.Collapse>
           <Nav>
             <div className="menu-border">
               <div id="menu">
@@ -88,14 +89,14 @@ const Navigation = ({ user }) => {
               </div>
             </div>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
         {/* </Container> */}
       </Navbar>
-    </>
+    </div>
 
             
 
-          <Navbar.Toggle  />
+          
           </div>
           
           
