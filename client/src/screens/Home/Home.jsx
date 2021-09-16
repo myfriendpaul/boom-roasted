@@ -32,10 +32,6 @@ const Home = (props) => {
             </button>
           </div>
           <div className="random"></div>
-          <div className="popular-container">
-          <div className="most-popular-cards">
-            <Popular />
-          </div>
           {/* <div className="who-we-are">
             <h1>Who we are</h1>
             <div className="p-who-we-are">
@@ -43,16 +39,24 @@ const Home = (props) => {
             </div>
           </div> */}
           <div>
+            </div>
+          <div id="white-background">
+          {/* <div id="background-div"> */}
+          <div className="popular-container">
+          <div className="most-popular-cards">
+          <Popular />
           </div>
-          <img
+          {/* <img
             src="https://imgur.com/jeZ7LEJ.jpg"
             className="background-bottom"
             alt="coffee"
-            />
-            </div>
+            /> */}
             <Link to="Support-us-on-GitHub">
             <button>GitHub</button>
             </Link>
+            </div>
+            {/* </div> */}
+            </div>
     </Layout>
 
       </div>
