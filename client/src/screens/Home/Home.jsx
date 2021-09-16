@@ -24,7 +24,7 @@ const Home = (props) => {
         <div>
           <button className="shop-now-btn">
             <Link className="shop-link" to="/productList">
-              Shop Now
+              SHOP NOW
             </Link>
           </button>
 
