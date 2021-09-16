@@ -1,14 +1,8 @@
-
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
 import { getProducts } from "../../services/products";
 import { Container } from "react-bootstrap";
-import { Link } from 'react-router-dom'
-
-
-
-
-
+import { Link } from "react-router-dom";
 
 const Popular = () => {
   const [popProducts, setPopProducts] = useState([]);
@@ -24,24 +18,18 @@ const Popular = () => {
     fetchProducts();
   }, []);
 
-
   return (
     <div className="products">
       {topProducts.map((product, index) => {
         return (
           <>
             <Link className="productList" to={`/products/${product._id}`}>
-              <Container>
-                <Card
-                  id="popcard"
-                  style={{ width: "20rem", display: "inline-block" }}
-                >
-                  <Card.Img variant="top" src={product.imgURL} />
-                  <Card.Body>
-                    <Card.Title>{product.name}</Card.Title>
-                  </Card.Body>
-                </Card>
-              </Container>
+              <Card style={{ width: "20rem" }} className="pop-cards">
+                <Card.Img variant="top" src={product.imgURL} />
+                <Card.Body>
+                  <Card.Title>{product.name}</Card.Title>
+                </Card.Body>
+              </Card>
             </Link>
           </>
         );
@@ -111,7 +99,3 @@ export default Popular;
 // }
 
 // };
-
-
-
-

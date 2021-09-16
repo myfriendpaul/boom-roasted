@@ -66,9 +66,14 @@ const ProductDetail = (props) => {
               <Link to="/productList" onClick={handleDelete}>
                 <Button variant="delete">Delete</Button>
               </Link>
+
               <Link to={`/products/${product._id}/edit`}>
                 <Button variant="edit">Edit</Button>
-              </Link>
+
+                <Link to={`/products/${product._id}/edit`}>
+                  <Button variant="edit">Edit</Button>
+                </Link>
+
             </div>
           </div>
         </div>

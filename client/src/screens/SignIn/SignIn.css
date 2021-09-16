@@ -1,15 +1,14 @@
-
 .form-container {
   background-image: url(https://i.imgur.com/iiMYF7H.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  }
+}
 
 .h3SignIn {
   display: flex;
   margin-left: 650px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 60px;
 }
 
@@ -18,16 +17,15 @@
   color: white;
   background-color: rgb(37, 66, 89);
   padding: 10px 30px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   /* margin-bottom: 400px; */
-  margin-top:25px;
+  margin-top: 25px;
   margin-right: 100px;
 }
 
-
 .form {
   display: flex;
-  width: 50%;;
+  width: 50%;
   margin-left: 40%;
   flex-direction: column;
   justify-content: space-around;
@@ -35,14 +33,12 @@
   align-items: flex-end;
   margin-top: 10%;
   margin-right: 10%;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 20px;
   margin-left: 650px;
   font-size: 20px;
   padding-bottom: 400px;
 }
-
-
 
 .input {
   padding: 9px 80px;
@@ -50,6 +46,4 @@
   border: none;
   margin-left: 25px;
   font-size: 20px;
-
 }
-
