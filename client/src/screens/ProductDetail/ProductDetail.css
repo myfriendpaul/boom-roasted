@@ -57,9 +57,12 @@
   letter-spacing: 1.5px;
 }
 
-.bean-devider {
-  width: 150px;
+#bean-devider {
   background-image: url(https://i.imgur.com/R9y07Wo.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 10px;
+  z-index: 1;
 }
 
 /* .btn-delete,
