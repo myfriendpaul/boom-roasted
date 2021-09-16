@@ -12,7 +12,6 @@ const Home = (props) => {
         <Layout user={props.user}>
           <div className="home"></div>
 
-
           {/* <Navigation /> */}
           <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" />
 
@@ -38,27 +37,23 @@ const Home = (props) => {
             <div className="who-we-are-image"></div>
             </div>
           </div> */}
-          <div>
-            </div>
+
+          <div></div>
           <div id="white-background">
-          {/* <div id="background-div"> */}
-          <div className="popular-container">
-          <div className="most-popular-cards">
-          <Popular />
-          </div>
-          {/* <img
-            src="https://imgur.com/jeZ7LEJ.jpg"
-            className="background-bottom"
-            alt="coffee"
-            /> */}
-            <Link to="Support-us-on-GitHub">
-            <button>GitHub</button>
-            </Link>
+            {/* <div id="background-div"> */}
+
+            <div className="popular-container">
+              <div className="most-popular-cards">
+                <Popular />
+              </div>
+
+              {/* <Link to="Support-us-on-GitHub">
+                <button>GitHub</button>
+              </Link> */}
             </div>
             {/* </div> */}
-            </div>
-    </Layout>
-
+          </div>
+        </Layout>
       </div>
 
       {/* <Footer /> */}

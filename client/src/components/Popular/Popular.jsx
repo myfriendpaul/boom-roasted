@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import { getProducts } from "../../services/products";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import './Popular.css'
+import "./Popular.css";
 
 const Popular = () => {
   const [popProducts, setPopProducts] = useState([]);
@@ -24,12 +24,14 @@ const Popular = () => {
       <div className="pop-products">
         {topProducts.map((product, index) => {
           return (
-            
             <div id="popular-items">
-            <Link className="popular-items-links" to={`/products/${product._id}`}>
-              <img src={product.imgURL} alt="Cool Cup" height="100px" />
-              <h3>{product.name}</h3>
-            </Link>
+              <Link
+                className="popular-items-links"
+                to={`/products/${product._id}`}
+              >
+                <img src={product.imgURL} alt="Cool Cup" height="200px" />
+                <h3>{product.name}</h3>
+              </Link>
             </div>
           );
         })}
