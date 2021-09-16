@@ -29,7 +29,12 @@ const Home = (props) => {
       </div>
       {/* <Footer /> */}
 
+
+      <div className="random"></div>
+      {/* <img src="https://imgur.com/jeZ7LEJ.jpg" className="background2" /> */}
+
            
+
     </>
   );
 };

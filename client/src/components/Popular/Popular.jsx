@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 
 import { getProducts } from "../../services/products";
+import { Container } from "react-bootstrap";
 
 
 
@@ -28,10 +29,19 @@ const Popular = () => {
       {topProducts.map((product, index) => {
         return (
           <>
-            <div className="popular">
-              <h1>{product.name}</h1>
-              <img src={product.imgURL} height="100px" />;
-            </div>
+            <Link className="productList" to={`/products/${product._id}`}>
+              <Container>
+                <Card
+                  id="popcard"
+                  style={{ width: "20rem", display: "inline-block" }}
+                >
+                  <Card.Img variant="top" src={product.imgURL} />
+                  <Card.Body>
+                    <Card.Title>{product.name}</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Container>
+            </Link>
           </>
         );
       })}
