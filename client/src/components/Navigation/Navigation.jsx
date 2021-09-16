@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import React from "react";
+
 import Container from "react-bootstrap/Container";
+
+
+
+
+
 
 const authenticatedOptions = (
   <>
@@ -55,6 +61,7 @@ const alwaysOptions = (
 const Navigation = ({ user }) => {
   return (
     <>
+
       <div className="nav-border">
         <Navbar expand="sm" id="nav">
           {/* <Container> */}
@@ -69,6 +76,57 @@ const Navigation = ({ user }) => {
             </Nav.Link>
 
             <Navbar.Toggle />
+
+    <div>
+
+      <Navbar expand="md" className="nav">
+        {/* <Container> */}
+        <div className="logo-home">
+
+    <div className="nav-border">
+      <Navbar
+        expand="sm"
+        id="nav">
+        {/* <Container> */}
+      <div className="logo-home">
+
+          <Nav.Link as={Link} to="/">
+            <img
+              src="https://i.imgur.com/srxKhf3.png"
+              alt="logo"
+              height="100"
+              width="150"
+            />
+          </Nav.Link>
+
+        </div>
+
+        
+
+        {/* <Navbar.Collapse>
+          <Nav>
+            <div className="menu-border">
+              <div id="menu">
+                <Nav.Link>
+                  {user && (
+                    <div className="link welcome">Welcome, {user.username}</div>
+                  )}
+                </Nav.Link>
+                <Nav.Link>{alwaysOptions}</Nav.Link>
+                <Nav.Link>
+                  {user ? authenticatedOptions : unauthenticatedOptions}
+                </Nav.Link>
+              </div>
+            </div>
+          </Nav>
+        </Navbar.Collapse> */}
+        {/* </Container> */}
+      </Navbar>
+    </div>
+
+            
+
+
           </div>
 
           <Navbar.Collapse>
@@ -97,8 +155,22 @@ const Navigation = ({ user }) => {
           </Navbar.Collapse>
           {/* </Container> */}
         </Navbar>
+
       </div>
     </>
+
+        </div>
+              </>
+
+
+
+
+
+
+
+
+
+
 
     /* <Navbar bg="light" variant="light" expand="sm">
     <Container className="Nav">
