@@ -1,6 +1,9 @@
 import { useEffect } from 'react'
 import { signOut } from '../../services/users'
 import { useHistory } from 'react-router-dom'
+import './SignOut.css'
+import  Navigation from '../../components/Navigation/Navigation'
+
 
 const SignOut = (props) => {
   const { setUser } = props
@@ -10,12 +13,20 @@ const SignOut = (props) => {
     const signOutUser = async () => {
       await signOut()
       setUser(null)
-      history.push('/CyaLatteAlligatte')
+      history.push('/sign-out')
     }
     signOutUser()
   }, [history, setUser])
 
-  return ''
+  return (
+    <div className="signOut">
+      <Navigation></Navigation>
+      <p id="paragraph" >
+        We’ll miss you!
+        Come back and visit us anytime</p>
+    </div>
+  )
 }
+
 
 export default SignOut

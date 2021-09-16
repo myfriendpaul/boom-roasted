@@ -1,5 +1,5 @@
 .nav-border {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   
   display: flex;
 }
@@ -19,6 +19,8 @@
   position: relative;
   left: 50vw;
   z-index: 3;
+  color:white;
+
 }
 
 .logo-home {

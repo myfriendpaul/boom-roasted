@@ -11,7 +11,6 @@ const Popular = () => {
     const fetchProducts = async () => {
       const allProducts = await getProducts();
       const topProducts = allProducts.slice(0, 3);
-      //algo that selects 3 random products then set popProducts to that, will be array of objects
       setTopProducts(topProducts);
       setPopProducts(popProducts);
     };
@@ -94,5 +93,4 @@ const Popular = () => {
 
 export default Popular;
 
-{
-}
+
