@@ -64,7 +64,7 @@ const Navigation = ({ user }) => {
             <Nav>
               <Nav.Link>
                 {user && (
-                  <div className="link welcome">Welcome, {user.username}</div>
+                  <div className="welcome-user">Welcome, {user.username}!</div>
                 )}
               </Nav.Link>
               <Nav.Link>{alwaysOptions}</Nav.Link>
