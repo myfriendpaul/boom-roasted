@@ -1,12 +1,9 @@
 .product-detail {
   display: flex;
-  padding: 10px;
+  padding: 30px;
   /* padding-top: 40px; */
   border: 2px solid rgb(186, 247, 107);
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 0;
-  margin-top: 30px;
+  margin: 0 0px 17px 120px;
   width: 80%;
   height: 100%;
   /* margin: 0 auto; */
@@ -64,6 +61,7 @@
   color: white;
   padding: 10px 25px;
   margin: 25px;
+  border-radius: 0px;
 }
 
 /* .edit-button-div {
@@ -135,11 +133,12 @@
 }
 
 .wrap-detail {
-  background-image: url(https://i.imgur.com/wmSygrC.jpg?1);
-  background-size: contain;
-  background-position: center;
-  filter: alpha(Opacity=90);
-  opacity: 0.9;
+  background-image: url(https://i.imgur.com/XnDekWu.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* filter: alpha(Opacity=90); */
+  /* opacity: 0.9; */
 }
 
 @media (max-width: 800px) {
