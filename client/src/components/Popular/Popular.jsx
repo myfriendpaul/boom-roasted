@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
-import { Card } from "react-bootstrap";
-import { useState, useEffect } from "react";
+
+import { useState, useEffect } from "react"
+
 import { getProducts } from "../../services/products";
+
+
+
+
+
 
 const Popular = () => {
   const [popProducts, setPopProducts] = useState([]);
@@ -16,6 +21,7 @@ const Popular = () => {
     };
     fetchProducts();
   }, []);
+
 
   return (
     <div className="products">
@@ -32,6 +38,7 @@ const Popular = () => {
     </div>
   );
 };
+export default Popular;
 
 /* <Link className="productList" to={`products/614217046e043ffccc8940a1`}>
 <Card style={{ width: "20rem" }}>
@@ -89,8 +96,12 @@ const Popular = () => {
 //       </>
 //     </div>
 //   );
+
+// }
+
 // };
 
 export default Popular;
+
 
 

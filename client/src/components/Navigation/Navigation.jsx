@@ -1,9 +1,9 @@
 import "./Navigation.css";
-import { Link } from "react-router-dom"
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import React from 'react'
-import Container from 'react-bootstrap/Container'
+import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import React from "react";
+
 
 
 
@@ -44,24 +44,59 @@ const alwaysOptions = (
   </>
 );
 
-
 const Navigation = ({ user }) => {
   return (
     <>
+    <div>
+
+      <Navbar expand="md" className="nav">
+        {/* <Container> */}
+        <div className="logo-home">
+
     <div className="nav-border">
       <Navbar
         expand="sm"
         id="nav">
         {/* <Container> */}
       <div className="logo-home">
+
           <Nav.Link as={Link} to="/">
-            
-
-            <img src="https://i.imgur.com/srxKhf3.png" alt="logo" height="100" width="150" />
+            <img
+              src="https://i.imgur.com/srxKhf3.png"
+              alt="logo"
+              height="100"
+              width="150"
+            />
           </Nav.Link>
+
+        </div>
+
+        
+
+        {/* <Navbar.Collapse>
+          <Nav>
+            <div className="menu-border">
+              <div id="menu">
+                <Nav.Link>
+                  {user && (
+                    <div className="link welcome">Welcome, {user.username}</div>
+                  )}
+                </Nav.Link>
+                <Nav.Link>{alwaysOptions}</Nav.Link>
+                <Nav.Link>
+                  {user ? authenticatedOptions : unauthenticatedOptions}
+                </Nav.Link>
+              </div>
+            </div>
+          </Nav>
+        </Navbar.Collapse> */}
+        {/* </Container> */}
+      </Navbar>
+    </div>
+
             
 
-          <Navbar.Toggle  />
+          
           </div>
           
           
@@ -102,9 +137,7 @@ const Navigation = ({ user }) => {
 
 
 
-
-
-      /* <Navbar bg="light" variant="light" expand="sm">
+    /* <Navbar bg="light" variant="light" expand="sm">
     <Container className="Nav">
           <Nav.Link className="logo" as={Link} to="/">
             <img src="https://i.imgur.com/srxKhf3.png" alt="logo" height="100" width="150" />
@@ -124,11 +157,6 @@ const Navigation = ({ user }) => {
     </Nav>
     </Container>
     </Navbar> */
-      
-      
-
-
-
 
     /* <div className="Nav">
       <NavLink className="Logo" to="/"></NavLink>
@@ -141,7 +169,6 @@ const Navigation = ({ user }) => {
         {user ? authenticatedOptions : unauthenticatedOptions}
       </div>
     </div> */
-      
   );
 };
 
