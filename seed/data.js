@@ -16,6 +16,34 @@ const insertData = async () => {
 
   const products = [
     {
+      name: "Black Excellence",
+      description: "Bold and smooth",
+      price: "$10",
+      origin: "Kenya",
+      imgURL: "https://i.imgur.com/CE0JMql.png",
+    },
+    {
+      name: "Alex's batch",
+      description: "Espresso, 100% arabica",
+      price: "$11",
+      origin: "Italy",
+      imgURL: "https://i.imgur.com/IuP6Voj.png",
+    },
+    {
+      name: "Nadia's blend",
+      description: "Breakfast blend, light roast ",
+      price: "$ 25",
+      origin: "Guatemala",
+      imgURL: "https://i.imgur.com/wTkvw8V.png",
+    },
+    {
+      name: "Paul's blend",
+      description: "Gives you what you need when you need it",
+      price: "$9.99",
+      origin: "Kona",
+      imgURL: "https://i.imgur.com/r1vNkQ6.png",
+    },
+    {
       name: "Andrew's cup",
       description: "A delicate piece of glassware",
       price: "$9.69",
@@ -23,46 +51,18 @@ const insertData = async () => {
       imgURL: "https://i.imgur.com/XAzAhZg.png",
     },
     {
-      name: "Paul's blend",
-      description: "Gives you what you need when you need it",
-      price: "$9.99",
-      origin: "Kona",
-      imgURL: "https://i.imgur.com/H2j6OLy.png",
-    },
-    {
-      name: "Alex's batch",
-      description: "Espresso, 100% arabica",
-      price: "$11",
-      origin: "Italy",
-      imgURL: "https://i.imgur.com/UNED53g.png",
-    },
-    {
-      name: "Black Excellence",
-      description: "Bold and smooth",
-      price: "$10",
-      origin: "Kenya",
-      imgURL: "https://i.imgur.com/I3m4qFp.png",
-    },
-    {
-      name: "Nadia's blend",
-      description: "Breakfast blend, light roast ",
-      price: "$ 25",
-      origin: "Guatemala",
-      imgURL: "https://i.imgur.com/7dk9tjJ.png",
-    },
-    {
       name: "Cafes ROURA",
       description: "Breakfast blend",
       price: "$12",
       origin: "Catalunya",
-      imgURL: "https://i.imgur.com/XP1hwm2.png",
+      imgURL: "https://i.imgur.com/gBIrMiG.png",
     },
     {
       name: "GA Special Blend",
       description: "French roast",
       price: "$15",
       origin: "Brazil",
-      imgURL: "https://i.imgur.com/utHRLUA.png",
+      imgURL: "https://i.imgur.com/R84uKK5.png",
     },
     {
       name: "Andrew smeltz",
@@ -76,7 +76,7 @@ const insertData = async () => {
       description: "Medium roast",
       price: "$35",
       origin: "Seattle",
-      imgURL: "hhttps://i.imgur.com/nO62lLM.png",
+      imgURL: "https://i.imgur.com/ZIuqNDE.png",
     },
   ];
   await Product.insertMany(products);

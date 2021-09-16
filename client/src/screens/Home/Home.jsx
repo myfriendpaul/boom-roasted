@@ -10,53 +10,6 @@ const Home = (props) => {
     <>
       <div className="background-group">
         <Layout user={props.user}>
-
-          <div className="home"></div>
-
-        </Layout>
-        <img src="https://imgur.com/wTkAT8z.jpg" className="background-top"
-         alt="coffee"/>
-
-        <div className="quote-block">
-          <p id="title-quote">Coffee for the heart and mind.</p>
-          <p>
-            Coffee that will satisfy your everyday taste. From cold brew to
-            roasted hot, we’re sure that every cup you have will be a cup of
-            joy.
-          </p>
-        </div>
-        <div>
-          <button className="shop-now-btn">
-            <Link className="shop-link" to="/productList">
-              SHOP NOW
-            </Link>
-          </button>
-
-        </div>
-        <div className="random"></div>
-        <img
-          src="https://imgur.com/jeZ7LEJ.jpg"
-          className="background-bottom"
-          alt="coffee"
-        />
-      </div>
-
-
-
-          {/* <Navigation /> */}
-          <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" alt="logo" />
-
-          <div className="quote-block">
-            {/* <p id="title-quote">Coffee for the heart and mind.</p>
-            <p>
-              Coffee that will satisfy your everyday taste. From cold brew to
-              roasted hot, we're sure that every cup you have will be a cup of
-              joy.
-            </p> */}
-          </div>
-          <div></div>
-            
-
           {/* <div className="home"></div> */}
 
           <div className="background-top">
@@ -67,7 +20,6 @@ const Home = (props) => {
                 roasted hot, we're sure that every cup you have will be a cup of
                 joy.
               </p>
-
               <Link className="shop-link" to="/productList">
                 <button className="shop-now-btn">SHOP NOW</button>
               </Link>
@@ -82,7 +34,6 @@ const Home = (props) => {
             </div>
           </div> */}
 
-          <div></div>
           <div id="white-background">
             {/* <div id="background-div"> */}
 
@@ -97,11 +48,11 @@ const Home = (props) => {
             </div>
             {/* </div> */}
           </div>
-        
-      
-      </>
+        </Layout>
+      </div>
 
-      /* <Footer /> */
+      {/* <Footer /> */}
+    </>
   );
 };
 

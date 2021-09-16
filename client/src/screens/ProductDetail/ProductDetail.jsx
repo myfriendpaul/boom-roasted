@@ -76,12 +76,6 @@ const ProductDetail = (props) => {
             </div>
           </div>
         </div>
-
-        {/* <div className="delete-button-div"> */}
-        {/* </div> */}
-
-        {/* <div className="edit-button-div"> */}
-        {/* </div> */}
       </Layout>
     </div>
   );
