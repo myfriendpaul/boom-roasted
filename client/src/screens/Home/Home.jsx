@@ -11,7 +11,8 @@ const Home = (props) => {
         <Layout user={props.user}>
           <div className="home"></div>
         </Layout>
-        <img src="https://imgur.com/wTkAT8z.jpg" className="background-top" />
+        <img src="https://imgur.com/wTkAT8z.jpg" className="background-top"
+         alt="coffee"/>
 
         <div className="quote-block">
           <p id="title-quote">Coffee for the heart and mind.</p>
