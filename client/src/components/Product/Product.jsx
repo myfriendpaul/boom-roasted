@@ -7,11 +7,11 @@ const Product = (props) => {
     <>
       <Link className="productList" to={`/products/${props.id}`}>
         <Card style={{ width: "20rem" }}>
-          <Card.Img variant="top" src={props.imgURL} />
+          <Card.Img className="image1" variant="top" src={props.imgURL} />
           <Card.Body>
             <Card.Title>{props.name}</Card.Title>
             <Card.Text>{props.price}</Card.Text>
-            <Button variant="primary">Add to cart</Button>
+            <Button variant="primary">More Info</Button>
           </Card.Body>
         </Card>
       </Link>

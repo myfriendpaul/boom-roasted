@@ -58,7 +58,11 @@ const ProductDetail = (props) => {
           <div className="info-detail">
             <div className="name">{product.name}</div>
             <div id="bean-devider">
-              {/* <img id="bean-devider src="https://i.imgur.com/t2JrOJD.png" alt="devider" > */}
+
+              
+              {/* <img id="bean-devider src="https://i.imgur.com/t2JrOJD.png" alt="devider" /> */}
+
+
             </div>
             <div className="price">{product.price}</div>
             <div className="description">{product.description}</div>

@@ -2,7 +2,8 @@ import { useEffect } from 'react'
 import { signOut } from '../../services/users'
 import { useHistory } from 'react-router-dom'
 import './SignOut.css'
-import  Navigation from '../../components/Navigation/Navigation'
+import  Layout from '../../components/Layout/Layout'
+
 
 
 const SignOut = (props) => {
@@ -19,12 +20,14 @@ const SignOut = (props) => {
   }, [history, setUser])
 
   return (
+    <Layout className="mediaSignup" user={props.user}>
     <div className="signOut">
-      <Navigation></Navigation>
       <p id="paragraph" >
         We’ll miss you!
         Come back and visit us anytime</p>
     </div>
+    </Layout>
+
   )
 }
 

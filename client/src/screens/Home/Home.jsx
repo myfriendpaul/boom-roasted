@@ -27,12 +27,6 @@ const Home = (props) => {
           </div>
 
           <div className="random"></div>
-          {/* <div className="who-we-are">
-            <h1>Who we are</h1>
-            <div className="p-who-we-are">
-            <div className="who-we-are-image"></div>
-            </div>
-          </div> */}
 
           <div id="white-background">
             {/* <div id="background-div"> */}
@@ -40,11 +34,29 @@ const Home = (props) => {
             <div className="popular-container">
               <div className="most-popular-cards">
                 <Popular />
-              </div>
 
-              {/* <Link to="Support-us-on-GitHub">
-                <button>GitHub</button>
-              </Link> */}
+                <div className="who-we-are">
+                  <div className="about-us">
+                    <p className="about-title">Who we are</p>
+                    <p className="about-text">
+                      We are five Software Engineering students who are putting
+                      their lives on hold to bring our customers some of the
+                      best Coffee they’ve ever had. One sip and you’ll be saying
+                      “Damn. Thats good Coffee”
+                    </p>
+                    <Link to="Support-us-on-GitHub">
+                      <button className="github">GitHub</button>
+                    </Link>
+                  </div>
+                  <div className="p-who-we-are">
+                    <img
+                      src="https://imgur.com/SDwQJF4.png"
+                      className="who-we-are-image"
+                    />
+                  </div>
+                </div>
+                <div className="footer"></div>
+              </div>
             </div>
             {/* </div> */}
           </div>
