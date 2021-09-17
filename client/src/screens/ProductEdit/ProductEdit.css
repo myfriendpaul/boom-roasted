@@ -1,4 +1,3 @@
-
 /* .edit-form {
   display: flex;
   width: 70%;
@@ -75,7 +74,7 @@
 
 .info-detail {
   height: 100%;
-  width: 100%; 
+  width: 100%;
   margin-top: 50px;
   text-align: center;
   display: inline-flexbox;
@@ -115,7 +114,7 @@
   background-repeat: no-repeat;
   filter: alpha(Opacity=90);
   opacity: 0.9;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 
@@ -133,9 +132,8 @@
     padding: 20px;
     padding-bottom: 80px;
   }
- 
- 
-.btn-secondary  {
+
+  .btn-secondary {
     width: 40%;
   }
 }
