@@ -6,8 +6,8 @@ const Product = (props) => {
   return (
     <>
       <Link className="productList" to={`/products/${props.id}`}>
-        <Card style={{ width: "20rem" }}>
-          <Card.Img variant="top" src={props.imgURL} />
+        <Card style={{ width: "20rem" } }>
+          <Card.Img  className="image1" variant="top" src={props.imgURL} />
           <Card.Body>
             <Card.Title>{props.name}</Card.Title>
             <Card.Text>{props.price}</Card.Text>
@@ -15,6 +15,7 @@ const Product = (props) => {
           </Card.Body>
         </Card>
       </Link>
+      
     </>
   );
 };
