@@ -44,7 +44,7 @@ const Home = (props) => {
                       best Coffee they’ve ever had. One sip and you’ll be saying
                       “Damn. Thats good Coffee”
                     </p>
-                    <Link to="Support-us-on-GitHub">
+                    <Link to="Support-us-on-GitHub" target="_blank">
                       <button className="github">GitHub</button>
                     </Link>
                   </div>

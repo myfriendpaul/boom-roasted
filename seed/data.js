@@ -58,8 +58,8 @@ const insertData = async () => {
       imgURL: "https://i.imgur.com/gBIrMiG.png",
     },
     {
-      name: "Edit Me Andy",
-      description: "French roast",
+      name: "GA Special Blend",
+      description: "Edit Me Andy",
       price: "$15",
       origin: "Brazil",
       imgURL: "https://i.imgur.com/R84uKK5.png",
