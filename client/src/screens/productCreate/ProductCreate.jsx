@@ -31,47 +31,63 @@ const ProductCreate = (props) => {
   }
 
   return (
-    <Layout user={props.user}>
+    <div >
+    <Layout className="mediaSignup" user={props.user}></Layout>
+      <div className="phrase">
+          <h1>Create your own coffee blend</h1>
+      </div>
+      <div className='create'>
+      
+      
       <form className="create-form" onSubmit={handleSubmit}>
+      <label id='label'>Name</label>
         <input
-          className="input-name"
-          placeholder="Name"
+          className="inputName"
           value={product.name}
           name="name"
           required
           autoFocus
           onChange={handleChange}
         />
+        <label id='label'>Price</label>
         <input
-          className="input-price"
-          placeholder="Price"
+          className="inputPrice"
+          // placeholder="Price"
           value={product.price}
           name="price"
           required
           onChange={handleChange}
         />
-        <textarea
-          className="textarea-description"
-          rows={10}
-          placeholder="Description"
+        <label id='label'>Description</label>
+        <input
+          className="inputDescription"
+          // placeholder="Description"
           value={product.description}
           name="description"
           required
           onChange={handleChange}
         />
+        <label id='label'>Image Link</label>
         <input
-          className="input-image-link"
-          placeholder="Image Link"
+          className="inputImage"
+          // placeholder="Image Link"
           value={product.imgURL}
           name="imgURL"
-          required
+          
           onChange={handleChange}
         />
         <button type="submit" className="submit-button">
           Submit
         </button>
       </form>
-    </Layout>
+      {/* <div className="buttonBox"> */}
+      
+      {/* </div> */}
+      </div>
+      
+      
+    </div>
+    
   );
 };
 
