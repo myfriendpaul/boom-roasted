@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./screens/Home/Home";
-import ProductCreate from "./screens/ProductCreate/ProductCreate";
+import ProductCreate from "./screens/CreateProduct/ProductCreate";
 import ProductList from "./screens/ProductList/ProductList";
 import ProductEdit from "./screens/ProductEdit/ProductEdit";
 import ProductDetail from "./screens/ProductDetail/ProductDetail";
@@ -10,8 +10,7 @@ import { verifyUser } from "./services/users";
 import SignUp from "./screens/SignUp/SignUp";
 import SignIn from "./screens/SignIn/SignIn";
 import SignOut from "./screens/SignOut/SignOut";
-import GitHub from "./screens/GitHub/GitHub"
-
+import GitHub from "./screens/GitHub/GitHub";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -51,7 +50,7 @@ const App = () => {
         <Route exact path="/products/:id">
           <ProductDetail user={user} />
         </Route>
-        <Route exact path='/Support-us-on-GitHub'>
+        <Route exact path="/Support-us-on-GitHub">
           <GitHub />
         </Route>
       </Switch>
