@@ -33,46 +33,52 @@ const ProductCreate = (props) => {
   return (
     <div className="parent-create">
       <Layout user={props.user}>
-      <h1 id="phrase">Create your own coffee blend</h1>
-        <div className="form-create-div">
+        <div className="phrase">
+          <h1>Create your own coffee blend</h1>
+        </div>
+        <div className="form-wrap">
           <form className="create-form" onSubmit={handleSubmit}>
-            <input
-              className="input-name"
-              placeholder="Name"
-              value={product.name}
-              name="name"
-              required
-              autoFocus
-              onChange={handleChange}
-            />
-            <input
-              className="input-price"
-              placeholder="Price"
-              value={product.price}
-              name="price"
-              required
-              onChange={handleChange}
-            />
-            <textarea
-              className="textarea-description"
-              rows={10}
-              placeholder="Description"
-              value={product.description}
-              name="description"
-              required
-              onChange={handleChange}
-            />
-            <input
-              className="input-image-link"
-              placeholder="Image Link"
-              value={product.imgURL}
-              name="imgURL"
-              required
-              onChange={handleChange}
-            />
-            <button type="submit" className="submit-button">
-              Submit
-            </button>
+            <div className="form-create-div">
+              <label id="label-create">Name</label>
+              <br />
+              <input
+                className="input-name"
+                value={product.name}
+                name="name"
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+              <label id="label-create">Price</label>
+              <br />
+              <input
+                className="input-price"
+                value={product.price}
+                name="price"
+                required
+                onChange={handleChange}
+              />
+              <label id="label-create">Description</label>
+              <br />
+              <textarea
+                className="textarea-description"
+                rows={10}
+                value={product.description}
+                required
+                onChange={handleChange}
+              />
+              <label id="label-create">Image Link</label>
+              <br />
+              <input
+                className="input-image-link"
+                value={product.imgURL}
+                name="imgURL"
+                onChange={handleChange}
+              />
+              <button type="submit" className="submit-button">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </Layout>
