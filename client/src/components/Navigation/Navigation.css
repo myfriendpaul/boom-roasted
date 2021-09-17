@@ -50,6 +50,7 @@ div.navbar-collapse.collapse {
   left: 51vw; */
   z-index: 3;
   top: 0.8vh;
+  font-size: 3vw;
 }
 
 .logo-home {
