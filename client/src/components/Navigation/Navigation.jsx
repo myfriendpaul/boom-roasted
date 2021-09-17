@@ -45,7 +45,11 @@ const Navigation = ({ user }) => {
   return (
     <>
       <div className="nav-border">
-        <Navbar expand="sm" id="nav">
+        <Navbar
+          expand="lg
+        "
+          id="nav"
+        >
           {/* <Container> */}
           <div className="logo-home">
             <Nav.Link as={Link} to="/">
@@ -62,15 +66,19 @@ const Navigation = ({ user }) => {
 
           <Navbar.Collapse>
             <Nav>
-              <Nav.Link>
-                {user && (
-                  <div className="welcome-user">Welcome, {user.username}!</div>
-                )}
-              </Nav.Link>
-              <Nav.Link>{alwaysOptions}</Nav.Link>
-              <Nav.Link>
-                {user ? authenticatedOptions : unauthenticatedOptions}
-              </Nav.Link>
+              <div className="nav-links-andy">
+                <Nav.Link>
+                  {user && (
+                    <div className="welcome-user">
+                      Welcome, {user.username}!
+                    </div>
+                  )}
+                </Nav.Link>
+                <Nav.Link>{alwaysOptions}</Nav.Link>
+                <Nav.Link>
+                  {user ? authenticatedOptions : unauthenticatedOptions}
+                </Nav.Link>
+              </div>
             </Nav>
           </Navbar.Collapse>
           {/* </Container> */}
