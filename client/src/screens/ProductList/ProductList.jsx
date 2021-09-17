@@ -4,9 +4,9 @@ import Layout from "../../components/Layout/Layout";
 import { getProducts } from "../../services/products";
 import Product from "../../components/Product/Product";
 
-// import { Link, Route } from "react-router-dom";
-// import Popular from "../../components/Popular/Popular";
-// import { Card, Button } from "react-bootstrap";
+import { Link, Route } from "react-router-dom";
+import Popular from "../../components/Popular/Popular";
+import { Card, Button } from "react-bootstrap";
 
 const ProductList = (props) => {
   const [products, setProducts] = useState([]);
