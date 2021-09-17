@@ -75,6 +75,7 @@ const ProductEdit = (props) => {
 
               <div id="bean-divider"></div>
               
+              
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea1"

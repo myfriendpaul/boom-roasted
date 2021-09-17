@@ -58,8 +58,11 @@ const ProductDetail = (props) => {
           <div className="info-detail">
             <div className="name">{product.name}</div>
             <div id="bean-devider">
-              empty space
+
+              
               {/* <img id="bean-devider src="https://i.imgur.com/t2JrOJD.png" alt="devider" /> */}
+
+
             </div>
             <div className="price">{product.price}</div>
             <div className="description">{product.description}</div>
@@ -76,12 +79,6 @@ const ProductDetail = (props) => {
             </div>
           </div>
         </div>
-
-        {/* <div className="delete-button-div"> */}
-        {/* </div> */}
-
-        {/* <div className="edit-button-div"> */}
-        {/* </div> */}
       </Layout>
     </div>
   );

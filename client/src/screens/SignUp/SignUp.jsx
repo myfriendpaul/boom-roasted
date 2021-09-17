@@ -3,7 +3,6 @@ import './SignUp.css'
 import { signUp } from '../../services/users'
 import { useHistory } from 'react-router-dom'
 import  Layout from '../../components/Layout/Layout'
-import  Navigation from '../../components/Navigation/Navigation'
 
 const SignUp = (props) => {
   const history = useHistory()
@@ -59,14 +58,14 @@ const SignUp = (props) => {
   const { username, email, password, passwordConfirmation } = form
 
   return (
-    <Layout user={props.user}>
+    <Layout className="mediaSignup" user={props.user}>
     <div className='signUp'>
       <h3 className='h3SignUp'>Sign Up</h3>
       
       <form className='inputForm'
-        onSubmit={onSignUp}>
+          onSubmit={onSignUp}>
+          
         <label id='labelSignUp'>Username</label>
-        <br />
         <input
           required
           className='inputsize'
