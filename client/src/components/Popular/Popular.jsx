@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import { Card } from "react-bootstrap";
 import { getProducts } from "../../services/products";
-import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Popular.css";
 
 const Popular = () => {
-  const [popProducts, setPopProducts] = useState([]);
+  // const [popProducts, setPopProducts] = useState([]);
   const [topProducts, setTopProducts] = useState([]);
 
   useEffect(() => {
@@ -14,7 +12,7 @@ const Popular = () => {
       const allProducts = await getProducts();
       const topProducts = allProducts.slice(0, 3);
       setTopProducts(topProducts);
-      setPopProducts(popProducts);
+      // setPopProducts(popProducts);
     };
     fetchProducts();
   }, []);
