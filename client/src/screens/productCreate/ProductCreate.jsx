@@ -31,6 +31,7 @@ const ProductCreate = (props) => {
   }
 
   return (
+
     <div >
     <Layout className="mediaSignup" user={props.user}></Layout>
       <div className="phrase">
@@ -80,14 +81,13 @@ const ProductCreate = (props) => {
           Submit
         </button>
       </form>
-      {/* <div className="buttonBox"> */}
       
-      {/* </div> */}
       </div>
       
       
     </div>
     
+
   );
 };
 

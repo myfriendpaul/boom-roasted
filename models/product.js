@@ -21,7 +21,7 @@ const Product = new Schema(
     },
     imgURL: {
       type: String,
-      required: true,
+      required: false,
     },
   },
   { timestamps: true }
