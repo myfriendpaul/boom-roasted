@@ -4,7 +4,7 @@
   flex-direction: row;
   font-family: "Yanone Kaffeesatz", sans-serif;
   background-color: white;
-  padding-bottom: 100%;
+  /* padding-bottom: 80%; */
   /* margin-bottom: -60%; */
   align-items: center;
 }
