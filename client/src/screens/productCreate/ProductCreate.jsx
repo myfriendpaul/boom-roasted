@@ -31,58 +31,63 @@ const ProductCreate = (props) => {
   }
 
   return (
-    <div className="parent-create">
-      <Layout user={props.user}>
-        <div className="phrase">
+
+    <div >
+    <Layout className="mediaSignup" user={props.user}></Layout>
+      <div className="phrase">
           <h1>Create your own coffee blend</h1>
-        </div>
-        <div className="form-wrap">
-          <form className="create-form" onSubmit={handleSubmit}>
-            <div className="form-create-div">
-              <label id="label-create">Name</label>
-              <br />
-              <input
-                className="input-name"
-                value={product.name}
-                name="name"
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label id="label-create">Price</label>
-              <br />
-              <input
-                className="input-price"
-                value={product.price}
-                name="price"
-                required
-                onChange={handleChange}
-              />
-              <label id="label-create">Description</label>
-              <br />
-              <textarea
-                className="textarea-description"
-                rows={10}
-                value={product.description}
-                required
-                onChange={handleChange}
-              />
-              <label id="label-create">Image Link</label>
-              <br />
-              <input
-                className="input-image-link"
-                value={product.imgURL}
-                name="imgURL"
-                onChange={handleChange}
-              />
-              <button type="submit" className="submit-button">
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </Layout>
+      </div>
+      <div className='create'>
+      
+      
+      <form className="create-form" onSubmit={handleSubmit}>
+      <label id='label'>Name</label>
+        <input
+          className="inputName"
+          value={product.name}
+          name="name"
+          required
+          autoFocus
+          onChange={handleChange}
+        />
+        <label id='label'>Price</label>
+        <input
+          className="inputPrice"
+          // placeholder="Price"
+          value={product.price}
+          name="price"
+          required
+          onChange={handleChange}
+        />
+        <label id='label'>Description</label>
+        <input
+          className="inputDescription"
+          // placeholder="Description"
+          value={product.description}
+          name="description"
+          required
+          onChange={handleChange}
+        />
+        <label id='label'>Image Link</label>
+        <input
+          className="inputImage"
+          // placeholder="Image Link"
+          value={product.imgURL}
+          name="imgURL"
+          
+          onChange={handleChange}
+        />
+        <button type="submit" className="submit-button">
+          Submit
+        </button>
+      </form>
+      
+      </div>
+      
+      
     </div>
+    
+
   );
 };
 

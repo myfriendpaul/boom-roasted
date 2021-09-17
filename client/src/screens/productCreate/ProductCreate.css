@@ -1,64 +1,90 @@
-.parent-create {
-  background-image: url(https://i.imgur.com/LVi7mRP.jpg?1);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  filter: alpha(Opacity=90);
-  opacity: 0.9;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
-  width: 100%;
+.phrase {
   display: flex;
-  justify-content: center;
+  margin-left: 700px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 60px;
+  padding-top:100px;
+  padding-bottom: 44px;
+  color: white;
 }
 
-.form-wrap {
-  height: 60%;
-  width: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: 10px 50px 50px 350px;
-  text-align: center;
+.create {
+  display: flex;
+  background-image: url(https://i.imgur.com/LVi7mRP.jpg?1);
+  opacity: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: -200px;
+  height: 100vh;
+  width: 100vw;
 }
 
-.form-create-div {
-  height: 70%;
-  width: 60%;
-  margin-top: 50px;
-  display: inline-flexbox;
-  border: 2 px solid pink;
-}
-
-/* #label-create {
-  display: inline-flexbox;
+/* .main {
+  background-image: url(https://i.imgur.com/LVi7mRP.jpg?1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
 } */
 
-.input-name,
-.input-price,
-.textarea-description,
-.input-image-link {
-  padding: 7px 80px;
-  border: 2px solid black;
-  margin-left: 25px;
-  margin-top: 0px;
-  text-align: center;
-}
 
-.submit-button {
-  background-color: rgb(85, 109, 125);
+.create-form {
+  display: flex;
+  width: 50%;
+  /* flex-direction: column;
+  justify-content: space-around; */
+  /* height: -50vh;
+  width: 50vw; */
+  /* align-items: center; */
+  /* margin-top: 50%;
+  margin-left: 300px; */
+  /* margin: 30vh 50vw;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 20px;
-  color: white;
-  padding: 10px 25px;
-  margin: 0 85px;
-  border-radius: 0px;
-  margin-top: 5%;
-  letter-spacing: 1.5px;
-}
-.phrase {
+  background-color:rgba(255, 255, 255, 0.606);
+  padding: 80px 80px */
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30vh 50vw;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 3rem;
-  letter-spacing: 1.5px;
-  text-align: center;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.606);
+  margin-top: 25vh;
+  padding: 80px;
 }
+.inputName, 
+.inputPrice,
+.inputDescription,
+.inputImage{
+  border: 1px solid rgb(0, 0, 0);
+}
+#input {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  margin-top: 0px;
+  padding-right: 100px;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+}
+
+/* .buttonBox {
+  margin-bottom: 00px;
+  
+} */
+.submit-button {
+  border: none;
+  color: white;
+  background-color: rgb(37, 66, 89);
+  padding: 5px 15px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin-top: 20px;
+  /* margin-left:500px; */
+}
+
