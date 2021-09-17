@@ -29,7 +29,7 @@ const Popular = () => {
                 className="popular-items-links"
                 to={`/products/${product._id}`}
               >
-                <img src={product.imgURL} alt="Cool Cup" height="200px" />
+                <img src={product.imgURL} alt="Cool Cup" height="175vh" />
                 <h3>{product.name}</h3>
               </Link>
             </div>

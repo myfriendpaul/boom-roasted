@@ -37,7 +37,15 @@
   justify-content: space-around;
   
 } */
+div.navbar-collapse.collapse {
+  justify-content: flex-end;
+}
 
+.nav-links-andy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .nav-border {
   background-color: rgb(240, 236, 236);
 
@@ -47,17 +55,16 @@
 #nav {
   display: flex;
   width: 100vw;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 3;
-  
 }
 
 .auth-menu,
 .unauth-menu {
   display: flex;
   align-self: flex-end;
-  position: relative;
-  left: 50vw;
+  /* position: relative;
+  left: 50vw; */
   z-index: 3;
 
   color: white;
@@ -66,19 +73,19 @@
 }
 
 .both-menu {
-  display: flex;
+  /* display: flex;
   align-self: flex-end;
   position: relative;
-  left: 50.9vw;
+  left: 50.9vw; */
   z-index: 3;
   font-size: 24px;
 }
 
 .welcome-user {
-  display: flex;
+  /* display: flex;
   align-self: flex-end;
   position: relative;
-  left: 51vw;
+  left: 51vw; */
   z-index: 3;
   top: 0.8vh;
   font-size: 24px;
@@ -86,11 +93,26 @@
 
 .logo-home {
   display: flex;
-  align-self: flex-end;
+  /* justify-content: space-between; */
   z-index: 3;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 875px) {
+  .logo-home {
+    width: 98%;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  .nav-links-andy {
+    flex-direction: column;
+    background-color: #f0ecec;
+  }
+  .auth-menu a {
+    margin: 0 5px;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
   .unauth-menu,
   .both-menu {
     display: flex;
@@ -143,7 +165,7 @@
     display: flex;
     align-self: flex-end;
     position: relative;
-    left: 39vw;
+    left: 51vw;
     z-index: 3;
     font-size: 24px;
   }
@@ -314,7 +336,7 @@
     left: 1vw;
     z-index: 3;
   }
-}
+} */
 
 .Nav {
   display: flex;
