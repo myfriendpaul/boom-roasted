@@ -1,12 +1,9 @@
-
-/* .parent-create {
-
 .phrase {
   display: flex;
   margin-left: 700px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 60px;
-  padding-top:100px;
+  padding-top: 100px;
   padding-bottom: 44px;
   color: white;
 }
@@ -23,32 +20,10 @@
   width: 100vw;
 }
 
-/* .main {
-
-  background-image: url(https://i.imgur.com/LVi7mRP.jpg?1);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  display: flex;
-} */
-
-
 .create-form {
   display: flex;
   width: 50%;
-  /* flex-direction: column;
-  justify-content: space-around; */
-  /* height: -50vh;
-  width: 50vw; */
-  /* align-items: center; */
-  /* margin-top: 50%;
-  margin-left: 300px; */
-  /* margin: 30vh 50vw;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 20px;
-  background-color:rgba(255, 255, 255, 0.606);
-  padding: 80px 80px */
+
   display: flex;
   width: 50%;
   flex-direction: column;
@@ -61,33 +36,12 @@
   margin-top: 25vh;
   padding: 80px;
 }
-.inputName, 
+.inputName,
 .inputPrice,
 .inputDescription,
-.inputImage{
+.inputImage {
   border: 1px solid rgb(0, 0, 0);
 }
-
-.form-create-div {
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 60%;
-  height: 60%;
-  display: inline-flexbox;
-  border: 5px solid rgb(86, 101, 211);
-} /* #phrase { */
-  /* font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 3rem;
-  letter-spacing: 1.5px;
-  text-align: center; */
-  /* border: 5px solid rgb(179, 58, 78);
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 60px;
-  margin-left: 300px;
-  color: rgb(85, 109, 126);
-} */
-
-
 #input {
   display: flex;
   align-items: center;
@@ -99,7 +53,10 @@
   padding-bottom: 10px;
 }
 
-
+/* .buttonBox {
+  margin-bottom: 00px;
+  
+} */
 .submit-button {
   border: none;
   color: white;
@@ -107,7 +64,5 @@
   padding: 5px 15px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   margin-top: 20px;
-  
+  /* margin-left:500px; */
 }
-
-
