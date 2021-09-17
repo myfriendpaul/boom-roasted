@@ -58,7 +58,7 @@ const ProductDetail = (props) => {
           <div className="info-detail">
             <div className="name">{product.name}</div>
             <div id="bean-devider">
-              empty space
+              
               {/* <img id="bean-devider src="https://i.imgur.com/t2JrOJD.png" alt="devider" /> */}
             </div>
             <div className="price">{product.price}</div>

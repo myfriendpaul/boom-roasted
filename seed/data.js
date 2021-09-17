@@ -16,19 +16,11 @@ const insertData = async () => {
 
   const products = [
     {
-      name: "Andrew's cup",
-      description: "A delicate piece of glassware",
-      price: "$9.69",
-      origin: "Ohio",
-      imgURL: "https://i.imgur.com/XAzAhZg.png",
-     
-    },
-    {
-      name: "Paul's blend",
-      description: "Gives you what you need when you need it",
-      price: "$9.99",
-      origin: "Kona",
-      imgURL: "https://i.imgur.com/r1vNkQ6.png",
+      name: "Black Excellence",
+      description: "Bold and smooth",
+      price: "$10",
+      origin: "Kenya",
+      imgURL: "https://i.imgur.com/CE0JMql.png",
     },
     {
       name: "Alex's batch",
@@ -38,18 +30,25 @@ const insertData = async () => {
       imgURL: "https://i.imgur.com/IuP6Voj.png",
     },
     {
-      name: "Black Excellence",
-      description: "Bold and smooth",
-      price: "$10",
-      origin: "Kenya",
-      imgURL: "https://i.imgur.com/CE0JMql.png",
-    },
-    {
       name: "Nadia's blend",
       description: "Breakfast blend, light roast ",
       price: "$ 25",
       origin: "Guatemala",
       imgURL: "https://i.imgur.com/wTkvw8V.png",
+    },
+    {
+      name: "Paul's blend",
+      description: "Gives you what you need when you need it",
+      price: "$9.99",
+      origin: "Kona",
+      imgURL: "https://i.imgur.com/r1vNkQ6.png",
+    },
+    {
+      name: "Andrew's cup",
+      description: "A delicate piece of glassware",
+      price: "$9.69",
+      origin: "Ohio",
+      imgURL: "https://i.imgur.com/XAzAhZg.png",
     },
     {
       name: "Cafes ROURA",
