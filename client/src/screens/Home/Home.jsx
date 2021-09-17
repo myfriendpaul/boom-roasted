@@ -27,12 +27,6 @@ const Home = (props) => {
           </div>
 
           <div className="random"></div>
-          {/* <div className="who-we-are">
-            <h1>Who we are</h1>
-            <div className="p-who-we-are">
-            <div className="who-we-are-image"></div>
-            </div>
-          </div> */}
 
           <div id="white-background">
             {/* <div id="background-div"> */}
@@ -40,6 +34,15 @@ const Home = (props) => {
             <div className="popular-container">
               <div className="most-popular-cards">
                 <Popular />
+                <div className="who-we-are">
+                  <h1>Who we are</h1>
+                  <div className="p-who-we-are">
+                    <img
+                      src="https://imgur.com/SDwQJF4.png"
+                      className="who-we-are-image"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* <Link to="Support-us-on-GitHub">
