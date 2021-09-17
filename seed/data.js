@@ -69,7 +69,7 @@ const insertData = async () => {
       description: "good",
       price: "currently sold out",
       origin: "Ohio(No, not where Lebron is from)",
-      imgURL: "https://i.imgur.com/mfkeoK2.png",
+      imgURL: "https://i.imgur.com/XUvl0CL.png",
     },
     {
       name: "Better than Sturbucks",
