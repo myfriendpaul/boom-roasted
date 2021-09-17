@@ -17,7 +17,8 @@ const insertData = async () => {
   const products = [
     {
       name: "Black Excellence",
-      description: "Bold and smooth",
+      description:
+        "This is a certified organic coffee. The cup is floral with notes of stone fruit and melon. We have worked with the Kata Muduga coop for the last 3 years, and every year coffees we source from the Nano Genji mill are some of our most highly anticipated coffees. Its a wonderful cup, full of surprises, and it's arrival always a sign of the beginning of summer.",
       price: "$10",
       origin: "Kenya",
       imgURL: "https://i.imgur.com/CE0JMql.png",
@@ -26,19 +27,22 @@ const insertData = async () => {
       name: "Alex's batch",
       description: "Espresso, 100% arabica",
       price: "$11",
-      origin: "Italy",
+      origin:
+        "The bright flavors of this medium roast are inspired—and created—by trailblazing women of the coffee industry. The juicy, citrusy and chocolaty blend combines coffee from Latin America. Named for the Mermaids from Pirates of the Carribean that symbolizes Boom! Roasted, this blend honors the innovations of women, from farmer to roaster to barista.",
       imgURL: "https://i.imgur.com/IuP6Voj.png",
     },
     {
       name: "Nadia's blend",
-      description: "Breakfast blend, light roast ",
+      description:
+        "Coffee from the Antigua Valley of Guatemala is the touchstone of quality. Here farmers take enormous pride in traditions, resulting in consistent flavor, cup after cup—lemon, chocolate and soft spice notes with an elegant mouthfeel unique to this region. It’s why we loved this coffee back in ’71, and why we love it today.",
       price: "$ 25",
       origin: "Guatemala",
       imgURL: "https://i.imgur.com/wTkvw8V.png",
     },
     {
-      name: "Paul's blend",
-      description: "Gives you what you need when you need it",
+      name: "Can I get a Cup of That",
+      description:
+        "A balanced roast between medium and dark. Mild fruit, balanced body, notes of caramel and roasted hazelnut.Gives you what you need when you need it",
       price: "$9.99",
       origin: "Kona",
       imgURL: "https://i.imgur.com/r1vNkQ6.png",
@@ -52,7 +56,8 @@ const insertData = async () => {
     },
     {
       name: "Cafes ROURA",
-      description: "Breakfast blend",
+      description:
+        "Like the early morning sun on Mount San Boom Roasted, this blend shines with gentle brightness. Tangy citrus flavors combine with those of complex wild berries. Wake up every morning with this cup of sunshine.",
       price: "$12",
       origin: "Catalunya",
       imgURL: "https://i.imgur.com/gBIrMiG.png",
@@ -67,13 +72,14 @@ const insertData = async () => {
     {
       name: "Andrew smeltz",
       description: "good",
-      price: "currently sold out",
+      price: "Currently Sold Out",
       origin: "Ohio(No, not where Lebron is from)",
       imgURL: "https://i.imgur.com/XUvl0CL.png",
     },
     {
       name: "Better than Sturbucks",
-      description: "Medium roast",
+      description:
+        "This outstanding single-origin coffee exhibits a rustic earthiness typical of Sumatra but with a sunny attitude. A meticulous drying process yields a unique clean taste; we roast it light and let it shine.",
       price: "$35",
       origin: "Seattle",
       imgURL: "https://i.imgur.com/ZIuqNDE.png",

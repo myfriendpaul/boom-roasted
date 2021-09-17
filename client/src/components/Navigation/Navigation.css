@@ -31,7 +31,7 @@ div.navbar-collapse.collapse {
 
   color: white;
 
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .both-menu {
@@ -40,7 +40,7 @@ div.navbar-collapse.collapse {
   position: relative;
   left: 50.9vw; */
   z-index: 3;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .welcome-user {
@@ -50,7 +50,7 @@ div.navbar-collapse.collapse {
   left: 51vw; */
   z-index: 3;
   top: 0.8vh;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .logo-home {
