@@ -162,11 +162,33 @@ body {
 
 .footer {
   background-image: url(https://i.imgur.com/87sfYKk.png);
-  /* border: 50px white solid; */
-  padding: 4vh;
+  position: absolute;
+  /* border: 10px black solid; */
+  height: 10%;
+  width: 75%;
+  /* padding: 10vh; */
   /* margin: 2vh 2vw; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
+}
+
+@media screen and (max-width: 875px) {
+  .footer {
+    height: 8%;
+  }
+  .quote-block {
+    font-size: 3.5vw;
+    width: 70%;
+  }
+  #title-quote {
+    font-size: 6vw;
+  }
+  .shop-now-btn {
+    font-size: 2vw;
+  }
+  .github {
+    font-size: 2vw;
+  }
 }
