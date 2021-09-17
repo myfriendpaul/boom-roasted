@@ -34,8 +34,20 @@ const Home = (props) => {
             <div className="popular-container">
               <div className="most-popular-cards">
                 <Popular />
+
                 <div className="who-we-are">
-                  <h1>Who we are</h1>
+                  <div className="about-us">
+                    <p className="about-title">Who we are</p>
+                    <p className="about-text">
+                      We are five Software Engineering students who are putting
+                      their lives on hold to bring our customers some of the
+                      best Coffee they’ve ever had. One sip and you’ll be saying
+                      “Damn. Thats good Coffee”
+                    </p>
+                    <Link to="Support-us-on-GitHub">
+                      <button className="github">GitHub</button>
+                    </Link>
+                  </div>
                   <div className="p-who-we-are">
                     <img
                       src="https://imgur.com/SDwQJF4.png"
@@ -43,11 +55,8 @@ const Home = (props) => {
                     />
                   </div>
                 </div>
+                <div className="footer"></div>
               </div>
-
-              {/* <Link to="Support-us-on-GitHub">
-                <button>GitHub</button>
-              </Link> */}
             </div>
             {/* </div> */}
           </div>
