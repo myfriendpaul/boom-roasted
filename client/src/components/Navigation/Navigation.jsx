@@ -24,6 +24,7 @@ const unauthenticatedOptions = (
       <Nav.Link className="Link" as={Link} to="/sign-up">
         Sign Up
       </Nav.Link>
+      <br />
       <Nav.Link className="Link" as={Link} to="/sign-in">
         Sign In
       </Nav.Link>
@@ -75,6 +76,7 @@ const Navigation = ({ user }) => {
                   )}
                 </Nav.Link>
                 <Nav.Link>{alwaysOptions}</Nav.Link>
+
                 <Nav.Link>
                   {user ? authenticatedOptions : unauthenticatedOptions}
                 </Nav.Link>

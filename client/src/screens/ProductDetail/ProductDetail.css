@@ -38,7 +38,6 @@
 .product-detail-image {
   height: 35%;
   width: 40%;
-
 }
 
 .btn-delete,
@@ -46,9 +45,12 @@
 .add-cart {
   background-color: rgb(85, 109, 125);
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 20px;
   color: white;
-  padding: 3%;
+  background-color: #4d6e7f;
+  padding: 7px 20px;
+  font-size: 1.3vw;
+  /* font-size: 20px; */
+  /* padding: 3%; */
   margin: 25px;
   border-radius: 0px;
   margin-top: 15%;
