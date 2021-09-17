@@ -8,7 +8,7 @@ const ProductCreate = (props) => {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    imgURL: "",
+    imgURL: "https://i.imgur.com/e05qa4X.png",
     price: "",
   });
   const [isCreated, setCreated] = useState(false);
@@ -31,44 +31,41 @@ const ProductCreate = (props) => {
   }
 
   return (
-
-    <div >
-    <Layout className="mediaSignup" user={props.user}></Layout>
+    <div>
+      <Layout className="mediaSignup" user={props.user}></Layout>
       <div className="phrase">
-          <h1>Create your own coffee blend</h1>
+        <h1>Create your own coffee blend</h1>
       </div>
-      <div className='create'>
-      
-      
-      <form className="create-form" onSubmit={handleSubmit}>
-      <label id='label'>Name</label>
-        <input
-          className="inputName"
-          value={product.name}
-          name="name"
-          required
-          autoFocus
-          onChange={handleChange}
-        />
-        <label id='label'>Price</label>
-        <input
-          className="inputPrice"
-          // placeholder="Price"
-          value={product.price}
-          name="price"
-          required
-          onChange={handleChange}
-        />
-        <label id='label'>Description</label>
-        <input
-          className="inputDescription"
-          // placeholder="Description"
-          value={product.description}
-          name="description"
-          required
-          onChange={handleChange}
-        />
-        <label id='label'>Image Link</label>
+      <div className="create">
+        <form className="create-form" onSubmit={handleSubmit}>
+          <label id="label">Name</label>
+          <input
+            className="inputName"
+            value={product.name}
+            name="name"
+            required
+            autoFocus
+            onChange={handleChange}
+          />
+          <label id="label">Price</label>
+          <input
+            className="inputPrice"
+            // placeholder="Price"
+            value={product.price}
+            name="price"
+            required
+            onChange={handleChange}
+          />
+          <label id="label">Description</label>
+          <input
+            className="inputDescription"
+            // placeholder="Description"
+            value={product.description}
+            name="description"
+            required
+            onChange={handleChange}
+          />
+          {/* <label id='label'>Image Link</label>
         <input
           className="inputImage"
           // placeholder="Image Link"
@@ -76,18 +73,13 @@ const ProductCreate = (props) => {
           name="imgURL"
           
           onChange={handleChange}
-        />
-        <button type="submit" className="submit-button">
-          Submit
-        </button>
-      </form>
-      
+        /> */}
+          <button type="submit" className="submit-button">
+            Submit
+          </button>
+        </form>
       </div>
-      
-      
     </div>
-    
-
   );
 };
 
