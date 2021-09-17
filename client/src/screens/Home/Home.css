@@ -122,3 +122,12 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.who-we-are {
+  border: 3px black solid;
+}
+
+.who-we-are-image {
+  width: 25vw;
+  height: 30vh;
+}
